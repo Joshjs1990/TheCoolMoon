@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Hubb Home Services	</title>
-	<atom:link href="https://thecoolmoon.site/hubb-home-services/feed/" rel="self" type="application/rss+xml" />
-	<link>https://thecoolmoon.site/hubb-home-services/</link>
+	<atom:link href="/hubb-home-services/feed/" rel="self" type="application/rss+xml" />
+	<link>/hubb-home-services/</link>
 	<description></description>
 	<lastBuildDate>Thu, 23 May 2024 08:32:11 +0000</lastBuildDate>
 	<sy:updatePeriod>

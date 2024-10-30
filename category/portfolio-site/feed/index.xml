@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Portfolio Site &#8211; TheCoolMoon</title>
-	<atom:link href="https://thecoolmoon.site/category/portfolio-site/feed/" rel="self" type="application/rss+xml" />
-	<link>https://thecoolmoon.site/</link>
+	<atom:link href="/category/portfolio-site/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description></description>
 	<lastBuildDate>Wed, 23 Oct 2024 14:35:39 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=6.6.2</generator>
 
 <image>
-	<url>https://thecoolmoon.site/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
+	<url>/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
 	<title>Portfolio Site &#8211; TheCoolMoon</title>
-	<link>https://thecoolmoon.site/</link>
+	<link>/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>N2 Clay Pottery Studio</title>
-		<link>https://thecoolmoon.site/n2-clay-pottery-studio/</link>
-					<comments>https://thecoolmoon.site/n2-clay-pottery-studio/#respond</comments>
+		<link>/n2-clay-pottery-studio/</link>
+					<comments>/n2-clay-pottery-studio/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 23 Oct 2024 14:19:43 +0000</pubDate>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">https://thecoolmoon.site/?p=3105</guid>
+		<guid isPermaLink="false">/?p=3105</guid>
 
 					<description><![CDATA[N2 Clay, a New York-based pottery studio, sought a modern and intuitive website to showcase their unique craftsmanship and offer a seamless [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -56,15 +56,15 @@
 <p>The site was optimized for mobile and desktop, ensuring a responsive experience across all devices. With the new platform, N2 Clay can effectively highlight their collections, promote events, and engage with the local artistic community.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://thecoolmoon.site/n2-clay-pottery-studio/feed/</wfw:commentRss>
+					<wfw:commentRss>/n2-clay-pottery-studio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>No Nonsense Agency</title>
-		<link>https://thecoolmoon.site/no-nonsense-agency/</link>
-					<comments>https://thecoolmoon.site/no-nonsense-agency/#respond</comments>
+		<link>/no-nonsense-agency/</link>
+					<comments>/no-nonsense-agency/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 23 May 2024 08:16:15 +0000</pubDate>
@@ -75,7 +75,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">https://thecoolmoon.site/?p=2911</guid>
+		<guid isPermaLink="false">/?p=2911</guid>
 
 					<description><![CDATA[No Nonsense Digital Marketing, a company known for its straightforward approach to digital marketing, sought a website that reflected its ethos: clear, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -314,15 +314,15 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://thecoolmoon.site/no-nonsense-agency/feed/</wfw:commentRss>
+					<wfw:commentRss>/no-nonsense-agency/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Frameless Project</title>
-		<link>https://thecoolmoon.site/frameless-project/</link>
-					<comments>https://thecoolmoon.site/frameless-project/#respond</comments>
+		<link>/frameless-project/</link>
+					<comments>/frameless-project/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 16 Nov 2023 16:55:36 +0000</pubDate>
@@ -332,7 +332,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">https://thecoolmoon.site/?p=2366</guid>
+		<guid isPermaLink="false">/?p=2366</guid>
 
 					<description><![CDATA[Overview: Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -435,22 +435,22 @@
 <p>The Frameless Project website stands as a testament to the successful collaboration between the project stakeholders and the development team. By combining a deep understanding of the community&#8217;s needs with a commitment to a visually immersive user experience, the website has become a pivotal platform for local photographers and photography enthusiasts alike, contributing to the growth and recognition of the Philadelphia photography scene.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://thecoolmoon.site/frameless-project/feed/</wfw:commentRss>
+					<wfw:commentRss>/frameless-project/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Game Developer&#8217;s Digital CV</title>
-		<link>https://thecoolmoon.site/game-developers-digital-cv/</link>
-					<comments>https://thecoolmoon.site/game-developers-digital-cv/#respond</comments>
+		<link>/game-developers-digital-cv/</link>
+					<comments>/game-developers-digital-cv/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 01 Nov 2023 18:56:29 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">https://thecoolmoon.site/?p=2372</guid>
+		<guid isPermaLink="false">/?p=2372</guid>
 
 					<description><![CDATA[This is a demo website of one-page digital CV for a game developer. Project Scope: The idea was to also have a [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -489,7 +489,7 @@
 <p>The idea was to also have a futuristic, gaming feel without it being too &#8220;gimmicky&#8221;.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://thecoolmoon.site/game-developers-digital-cv/feed/</wfw:commentRss>
+					<wfw:commentRss>/game-developers-digital-cv/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
