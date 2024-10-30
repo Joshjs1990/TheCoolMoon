@@ -9,8 +9,8 @@
 
 <channel>
 	<title>TheCoolMoon</title>
-	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://thecoolmoon.site/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thecoolmoon.site/</link>
 	<description></description>
 	<lastBuildDate>Wed, 23 Oct 2024 14:35:39 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=6.6.2</generator>
 
 <image>
-	<url>/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
+	<url>https://thecoolmoon.site/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
 	<title>TheCoolMoon</title>
-	<link>/</link>
+	<link>https://thecoolmoon.site/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>N2 Clay Pottery Studio</title>
-		<link>/n2-clay-pottery-studio/</link>
-					<comments>/n2-clay-pottery-studio/#respond</comments>
+		<link>https://thecoolmoon.site/n2-clay-pottery-studio/</link>
+					<comments>https://thecoolmoon.site/n2-clay-pottery-studio/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 23 Oct 2024 14:19:43 +0000</pubDate>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=3105</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=3105</guid>
 
 					<description><![CDATA[N2 Clay, a New York-based pottery studio, sought a modern and intuitive website to showcase their unique craftsmanship and offer a seamless [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -56,20 +56,20 @@
 <p>The site was optimized for mobile and desktop, ensuring a responsive experience across all devices. With the new platform, N2 Clay can effectively highlight their collections, promote events, and engage with the local artistic community.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/n2-clay-pottery-studio/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/n2-clay-pottery-studio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Duan Harapan</title>
-		<link>/duan-harapan/</link>
-					<comments>/duan-harapan/#respond</comments>
+		<link>https://thecoolmoon.site/duan-harapan/</link>
+					<comments>https://thecoolmoon.site/duan-harapan/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 18 Sep 2024 08:17:20 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
-		<guid isPermaLink="false">/?p=3051</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=3051</guid>
 
 					<description><![CDATA[Project Overview: I had the opportunity to design and develop the website for Daun Harapan, a documentary film centered on the Kratom [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -220,15 +220,15 @@
 <p>Visit the website at <a href="https://daunharapan.com/">Daun Harapan</a> to explore the film and learn more about the Kratom industry.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/duan-harapan/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/duan-harapan/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Cyber Shepherd</title>
-		<link>/cyber-shepherd/</link>
-					<comments>/cyber-shepherd/#respond</comments>
+		<link>https://thecoolmoon.site/cyber-shepherd/</link>
+					<comments>https://thecoolmoon.site/cyber-shepherd/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 31 Aug 2024 21:09:41 +0000</pubDate>
@@ -236,7 +236,7 @@
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=3009</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=3009</guid>
 
 					<description><![CDATA[Client: Cyber Shepherd Industry: Digital Security Platform: WordPress Services Provided: Web Design, Web Development, UX/UI Design, Responsive Design, SEO Optimization Overview Cyber [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -363,20 +363,20 @@
 <p>The redesign of Cyber Shepherd’s website successfully delivered a high-performing, user-friendly platform that effectively showcased their expertise in digital security. By combining a modern design with robust functionality, I helped Cyber Shepherd boost engagement, increase lead gener</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/cyber-shepherd/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/cyber-shepherd/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Elemental Cleaning</title>
-		<link>/elemental-cleaning/</link>
-					<comments>/elemental-cleaning/#respond</comments>
+		<link>https://thecoolmoon.site/elemental-cleaning/</link>
+					<comments>https://thecoolmoon.site/elemental-cleaning/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 01 Aug 2024 21:22:51 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
-		<guid isPermaLink="false">/?p=3027</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=3027</guid>
 
 					<description><![CDATA[Elemental Cleaning is a UK-based cleaning company that specializes in residential and commercial cleaning services. With their focus on eco-friendly products and [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -523,15 +523,15 @@
 <p>By combining innovative web design, strategic SEO, and cohesive graphic design, we were able to deliver a complete digital solution that exceeded Elemental Cleaning’s expectations. Our collaboration helped them strengthen their online presence, attract more customers, and continue growing their business.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/elemental-cleaning/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/elemental-cleaning/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>No Nonsense Agency</title>
-		<link>/no-nonsense-agency/</link>
-					<comments>/no-nonsense-agency/#respond</comments>
+		<link>https://thecoolmoon.site/no-nonsense-agency/</link>
+					<comments>https://thecoolmoon.site/no-nonsense-agency/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 23 May 2024 08:16:15 +0000</pubDate>
@@ -542,7 +542,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2911</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=2911</guid>
 
 					<description><![CDATA[No Nonsense Digital Marketing, a company known for its straightforward approach to digital marketing, sought a website that reflected its ethos: clear, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -781,15 +781,15 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/no-nonsense-agency/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/no-nonsense-agency/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Hubb Home Services</title>
-		<link>/hubb-home-services/</link>
-					<comments>/hubb-home-services/#respond</comments>
+		<link>https://thecoolmoon.site/hubb-home-services/</link>
+					<comments>https://thecoolmoon.site/hubb-home-services/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 22 May 2024 19:39:37 +0000</pubDate>
@@ -797,7 +797,7 @@
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2883</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=2883</guid>
 
 					<description><![CDATA[Hubb Home Services, a prominent home inspection company in New York and the surrounding areas, recognized the need to modernize their online [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -826,15 +826,15 @@
 </ol>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/hubb-home-services/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/hubb-home-services/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Frameless Project</title>
-		<link>/frameless-project/</link>
-					<comments>/frameless-project/#respond</comments>
+		<link>https://thecoolmoon.site/frameless-project/</link>
+					<comments>https://thecoolmoon.site/frameless-project/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 16 Nov 2023 16:55:36 +0000</pubDate>
@@ -844,7 +844,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2366</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=2366</guid>
 
 					<description><![CDATA[Overview: Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -947,15 +947,15 @@
 <p>The Frameless Project website stands as a testament to the successful collaboration between the project stakeholders and the development team. By combining a deep understanding of the community&#8217;s needs with a commitment to a visually immersive user experience, the website has become a pivotal platform for local photographers and photography enthusiasts alike, contributing to the growth and recognition of the Philadelphia photography scene.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/frameless-project/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/frameless-project/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Best Ecommerce Website Practices for Generating Sales and Side Income</title>
-		<link>/best-ecommerce-website-practices-for-generating-sales-and-side-income/</link>
-					<comments>/best-ecommerce-website-practices-for-generating-sales-and-side-income/#respond</comments>
+		<link>https://thecoolmoon.site/best-ecommerce-website-practices-for-generating-sales-and-side-income/</link>
+					<comments>https://thecoolmoon.site/best-ecommerce-website-practices-for-generating-sales-and-side-income/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 09 Nov 2023 15:20:32 +0000</pubDate>
@@ -966,7 +966,7 @@
 		<category><![CDATA[generate sales]]></category>
 		<category><![CDATA[side income]]></category>
 		<category><![CDATA[websites for side income]]></category>
-		<guid isPermaLink="false">/best-ecommerce-website-practices-for-generating-sales-and-side-income/</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/best-ecommerce-website-practices-for-generating-sales-and-side-income/</guid>
 
 					<description><![CDATA[Best Ecommerce Website Practices for Generating Sales and Side Income Are you an entrepreneur looking to start an online ecommerce business? Or [&#8230;]]]></description>
 										<content:encoded><![CDATA[<h1>Best Ecommerce Website Practices for Generating Sales and Side Income</h1>
@@ -974,7 +974,7 @@
 <h2>1. Choose the Right Ecommerce Site Builder</h2>
 <p>When starting an ecommerce website, selecting the right site builder is essential. Look for a platform that offers user-friendly design templates, easy product management, secure payment options, and reliable customer support. Some of the best ecommerce site builders include Shopify, WooCommerce, and BigCommerce.</p>
 <h2>2. Optimize Your Website for Search Engines</h2>
-<p>To attract organic traffic and improve your website&#8217;s visibility, it&#8217;s important to optimize it for <a href="/seo-specialist/">search engines</a>. Conduct keyword research to identify relevant search terms and incorporate them naturally into your website&#8217;s content, meta tags, and product descriptions. Additionally, focus on creating high-quality, informative content that engages your target audience.</p>
+<p>To attract organic traffic and improve your website&#8217;s visibility, it&#8217;s important to optimize it for <a href="https://thecoolmoon.site/seo-specialist/">search engines</a>. Conduct keyword research to identify relevant search terms and incorporate them naturally into your website&#8217;s content, meta tags, and product descriptions. Additionally, focus on creating high-quality, informative content that engages your target audience.</p>
 <h2>3. Provide a Seamless User Experience</h2>
 <p>A user-friendly and intuitive website is crucial for generating sales. Ensure that your ecommerce website has a clear navigation menu, easy-to-use search functionality, and a streamlined checkout process. Optimize your website for mobile devices to cater to the growing number of mobile shoppers.</p>
 <h2>4. Use High-Quality Product Images and Descriptions</h2>
@@ -985,25 +985,25 @@
 <p>Exceptional customer support is essential for building trust and loyalty. Offer multiple communication channels such as live chat, email, and phone support. Respond promptly to customer inquiries and resolve any issues or concerns they may have. Consider implementing a hassle-free return and refund policy to enhance customer satisfaction.</p>
 <h3>Summary</h3>
 <p>Building the best ecommerce website requires careful planning and implementation of effective strategies. Choose the right ecommerce site builder, optimize your website for search engines, provide a seamless user experience, use high-quality product images and descriptions, implement effective marketing strategies, and provide excellent customer support. By following these best practices, you can increase your chances of generating sales and earning a side income through your ecommerce website.</p>
-<p>Interested in getting an ecommerce website for your business? <a href="/contact/">Contact me</a> today to discuss.</p>
+<p>Interested in getting an ecommerce website for your business? <a href="https://thecoolmoon.site/contact/">Contact me</a> today to discuss.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/best-ecommerce-website-practices-for-generating-sales-and-side-income/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/best-ecommerce-website-practices-for-generating-sales-and-side-income/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Game Developer&#8217;s Digital CV</title>
-		<link>/game-developers-digital-cv/</link>
-					<comments>/game-developers-digital-cv/#respond</comments>
+		<link>https://thecoolmoon.site/game-developers-digital-cv/</link>
+					<comments>https://thecoolmoon.site/game-developers-digital-cv/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 01 Nov 2023 18:56:29 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=2372</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=2372</guid>
 
 					<description><![CDATA[This is a demo website of one-page digital CV for a game developer. Project Scope: The idea was to also have a [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1042,21 +1042,21 @@
 <p>The idea was to also have a futuristic, gaming feel without it being too &#8220;gimmicky&#8221;.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/game-developers-digital-cv/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/game-developers-digital-cv/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>What Is an SEO Specialist?</title>
-		<link>/seo-specialist/</link>
-					<comments>/seo-specialist/#respond</comments>
+		<link>https://thecoolmoon.site/seo-specialist/</link>
+					<comments>https://thecoolmoon.site/seo-specialist/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 28 Oct 2023 15:00:17 +0000</pubDate>
 				<category><![CDATA[Articles]]></category>
 		<category><![CDATA[Useful Information]]></category>
-		<guid isPermaLink="false">/?p=1960</guid>
+		<guid isPermaLink="false">https://thecoolmoon.site/?p=1960</guid>
 
 					<description><![CDATA[An SEO Specialist plays a pivotal role in enhancing website visibility on search engines like Google and Bing. Their multifaceted responsibilities encompass [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1111,7 +1111,7 @@
 <p>In conclusion, the role of an SEO Specialist is far more intricate and expansive than meets the eye. It demands a fusion of technical acumen, strategic vision, creative finesse, and adaptability to thrive in the ever-evolving digital landscape. As businesses worldwide recognize the pivotal role of online visibility in their success, the demand for skilled SEO Specialists continues to soar, offering aspiring professionals a boundless realm of opportunities and challenges to explore and conquer.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/seo-specialist/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.site/seo-specialist/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
