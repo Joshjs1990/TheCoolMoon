@@ -1,0 +1,196 @@
+.ui-e-adv-grid {
+    display: grid;
+}
+.ui-e-maso .ui-e-adv-grid {
+    align-items: flex-start;
+}
+
+.ui-e-post-item article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ui-e-post-ovf-yes .ui-e-post-item article {
+    overflow: visible;
+}
+
+.ui-e-meta-item {
+    display: inline-block;
+    pointer-events: all;
+}
+
+.ui-e-meta-item a {
+    transition: color .3s ease;
+}
+
+.ui-e-meta-item span {
+    margin-right: 0.3em;
+}
+
+.ui-e-meta-item .ui-e-meta-after{
+    margin-right: 0;
+    margin-left: 0.3em;
+}
+
+.ui-e-meta-item .ui-e-meta-icon {
+    margin-right: 0.5em;
+}
+
+.ui-e-post-top {
+    position: relative;
+    overflow: hidden;
+}
+.ui-e-post-top-meta{
+    pointer-events: none;
+}
+.ui-e-post-top-meta,
+.ui-e-post-img:not(img) {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    top: 0;
+}
+
+.ui-e-post-img-wrapp {
+    overflow: hidden;
+    display: block;
+}
+
+.ui-e-post-img {
+    display: grid;
+    background-size: cover;
+    background-position: center;
+}
+.ui-e-meta-item img.ui-e-meta-avatar{
+    max-width: 2.2em;
+    border-radius:50%;
+    vertical-align: middle;
+}
+
+.ui-e-post-img-wrapp {
+    padding-bottom: var(--ui-e-img-size);
+    transition: padding 0s
+}
+
+.ui-e-post-title {
+    margin: 0;
+}
+
+.ui-e-post-content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ui-e-post-meta {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.ui-e-post-content .elementor-button > span{
+    display: flex;
+    text-align: justify;
+}
+.ui-e-post-item article{
+    transition: all .65s cubic-bezier(.23,1,.32,1);
+}
+
+
+
+/* SPLIT ITEM STYLE */
+.ui-e-apg-split article {
+    flex-direction: row;
+}
+
+.ui-e-apg-split .ui-e-post-img-wrapp {
+    padding: 0
+}
+
+.ui-e-apg-split .ui-e-post-top {
+    min-width: var(--ui-e-img-size);
+}
+
+/* OVERLAY ITEM STYLE */
+.ui-e-apg-overlay .ui-e-post-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.ui-e-apg-overlay.ui-e-maso .ui-e-adv-grid {
+    align-items: start;
+}
+
+/* TODO: SPLIT THE ASSETS PARTS */
+.ui-e-apg-overlay.ui-e-meta-anim-show .ui-e-meta-wrapp{
+    max-height: 0;
+    opacity: 0;
+    display: grid;
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui-e-apg-overlay.ui-e-meta-anim-show .ui-e-post-item:hover .ui-e-meta-wrapp{
+    max-height: 50px;
+    opacity: 1;
+}
+.ui-e-content-anim-show .ui-e-post-item .ui-e-post-content {
+    opacity: 0;
+    transition: all .4s ease;
+}
+.ui-e-content-anim-show .ui-e-post-item:hover .ui-e-post-content{
+    opacity: 1;
+}
+
+/* Animations */
+.ui-e-btn-anim-show .ui-e-post-content .elementor-button{
+    opacity:0;
+    transform: translate3d(0, -8px, 0);
+    pointer-events:none;
+}
+.ui-e-btn-anim-show .ui-e-post-item:hover .ui-e-post-content .elementor-button{
+    transform:none;
+    pointer-events:all;
+    opacity:1;
+}
+.ui-e-item-anim-translate .ui-e-post-item:hover article{
+    transform: translate3d(0, -8px, 0);
+}
+.ui-e-meta-anim-show .ui-e-top{
+    transition: transform .3s cubic-bezier(.075,.82,.165,1),opacity .3s ease;
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+}
+.ui-e-meta-anim-show .ui-e-post-item:hover .ui-e-top{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+.ui-e-img-anim-zoom .ui-e-post-img{
+    transition: transform .8s cubic-bezier(.075,.82,.165,1);
+    transform: scale(1);
+}
+.ui-e-img-anim-zoom .ui-e-post-item:hover .ui-e-post-img{
+    transform: scale(1.2);
+}
+.ui-e-grid-animate .ui-e-animated {
+    animation-fill-mode: both;
+    animation-duration: var(---ui-speed);
+    animation-delay: calc(var(---ui-delay) + calc(var(---ui-stagger) * var(---ui-index)));
+}
+.ui-e-title-anim-underline .ui-e-post-title span  {
+	background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-position: 100% 95%;
+    background-size: 0px 2px;
+    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+	display: inline;
+	background-repeat: no-repeat;
+}
+.ui-e-title-anim-underline .ui-e-post-item:hover .ui-e-post-title span {
+	background-size: 100% 2px;
+	background-position: 0 95%;
+}

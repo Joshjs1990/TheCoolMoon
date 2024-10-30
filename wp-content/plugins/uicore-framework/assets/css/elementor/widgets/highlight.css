@@ -1,0 +1,10 @@
+.ui-e-highlight-image img {
+    vertical-align: middle;
+    max-height: calc(1em * var(--ui-e-asset-size, 1));
+    width: auto;
+}
+
+.ui-e-highlight-icon i {
+    vertical-align: middle;
+    font-size: calc(1em * var(--ui-e-asset-size, 1));
+}
