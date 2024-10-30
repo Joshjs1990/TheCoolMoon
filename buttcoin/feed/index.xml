@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Buttcoin	</title>
-	<atom:link href="https://thecoolmoon.site/buttcoin/feed/" rel="self" type="application/rss+xml" />
-	<link>https://thecoolmoon.site/buttcoin/</link>
+	<atom:link href="/buttcoin/feed/" rel="self" type="application/rss+xml" />
+	<link>/buttcoin/</link>
 	<description></description>
 	<lastBuildDate>Thu, 09 Mar 2023 13:30:37 +0000</lastBuildDate>
 	<sy:updatePeriod>

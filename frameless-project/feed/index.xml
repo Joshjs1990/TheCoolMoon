@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Frameless Project	</title>
-	<atom:link href="https://thecoolmoon.site/frameless-project/feed/" rel="self" type="application/rss+xml" />
-	<link>https://thecoolmoon.site/frameless-project/</link>
+	<atom:link href="/frameless-project/feed/" rel="self" type="application/rss+xml" />
+	<link>/frameless-project/</link>
 	<description></description>
 	<lastBuildDate>Fri, 17 May 2024 15:26:13 +0000</lastBuildDate>
 	<sy:updatePeriod>
