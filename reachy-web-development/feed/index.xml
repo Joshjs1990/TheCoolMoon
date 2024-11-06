@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Reachy Web Development	</title>
-	<atom:link href="/reachy-web-development/feed/" rel="self" type="application/rss+xml" />
-	<link>/reachy-web-development/</link>
+	<atom:link href="https://thecoolmoon.com/reachy-web-development/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thecoolmoon.com/reachy-web-development/</link>
 	<description></description>
 	<lastBuildDate>Fri, 17 May 2024 15:28:35 +0000</lastBuildDate>
 	<sy:updatePeriod>

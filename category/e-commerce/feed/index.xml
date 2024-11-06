@@ -9,10 +9,10 @@
 
 <channel>
 	<title>E-Commerce &#8211; TheCoolMoon</title>
-	<atom:link href="/category/e-commerce/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://thecoolmoon.com/category/e-commerce/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thecoolmoon.com/</link>
 	<description></description>
-	<lastBuildDate>Fri, 17 May 2024 15:27:38 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Nov 2024 07:57:14 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,22 +21,75 @@
 	<generator>https://wordpress.org/?v=6.6.2</generator>
 
 <image>
-	<url>/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
+	<url>https://thecoolmoon.com/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
 	<title>E-Commerce &#8211; TheCoolMoon</title>
-	<link>/</link>
+	<link>https://thecoolmoon.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>L&#038;S Fabworks</title>
+		<link>https://thecoolmoon.com/ls-fabworks/</link>
+					<comments>https://thecoolmoon.com/ls-fabworks/#respond</comments>
+		
+		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
+		<pubDate>Thu, 09 May 2024 12:21:00 +0000</pubDate>
+				<category><![CDATA[E-Commerce]]></category>
+		<category><![CDATA[Local Pages]]></category>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1184</guid>
+
+					<description><![CDATA[For LS Fabworks, a high-traffic motorcycle garage and online store, I executed an end-to-end e-commerce web design and development project aimed at [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>For LS Fabworks, a high-traffic motorcycle garage and online store, I executed an end-to-end e-commerce web design and development project aimed at enhancing both customer experience and business operations.</p>
+
+
+
+<p><strong>Project Highlights:</strong></p>
+
+
+
+<p>• <strong>Custom E-commerce Solutions</strong>: Developed a robust online store tailored to showcase LS Fab Works’ wide range of motorcycle parts and services. Integrated a seamless shopping experience that supports high volumes of traffic without performance issues.</p>
+
+
+
+<p>• <strong>User-Centric Design</strong>: Crafted an engaging, motorcycle-themed design that aligns with the brand’s identity and appeals to enthusiasts. Prioritized user-friendly navigation and clear product categorization to facilitate quick and easy access to products.</p>
+
+
+
+<p>• <strong>Responsive Development</strong>: Ensured that the site is fully responsive and optimized for different devices, providing a consistent and functional user experience across desktops, tablets, and smartphones.</p>
+
+
+
+<p>• <strong>Advanced Functionality</strong>: Implemented features such as secure payment gateways, user accounts, and order tracking to enhance convenience and build customer trust.</p>
+
+
+
+<p>• <strong>SEO and Performance Optimization</strong>: Applied comprehensive SEO strategies and technical optimizations to improve site visibility, attract more visitors, and convert traffic into sales.</p>
+
+
+
+<p>The completed project equipped LS Fabworks, with a powerful digital platform that not only showcases their expertise but also maximizes their business potential in a competitive online market.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://thecoolmoon.com/ls-fabworks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Pyrenese Pack</title>
-		<link>/pyrenese-pack/</link>
-					<comments>/pyrenese-pack/#respond</comments>
+		<link>https://thecoolmoon.com/pyrenese-pack/</link>
+					<comments>https://thecoolmoon.com/pyrenese-pack/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 23 Sep 2023 13:58:58 +0000</pubDate>
 				<category><![CDATA[E-Commerce]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=1762</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1762</guid>
 
 					<description><![CDATA[Client Overview: Pyrenees Pack is an innovative NFT (Non-Fungible Token) project. The project combines art and technology to create a unique platform [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -103,61 +156,40 @@
 <p>This case study demonstrates my ability to create a tailored web solution for an NFT project, aligning with the client&#8217;s vision of minimalistic simplicity while offering a secure and user-friendly platform for NFT collectors.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/pyrenese-pack/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>L&#038;S Fabworks</title>
-		<link>/ls-fabworks/</link>
-					<comments>/ls-fabworks/#respond</comments>
-		
-		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
-		<pubDate>Tue, 09 May 2023 12:21:37 +0000</pubDate>
-				<category><![CDATA[E-Commerce]]></category>
-		<category><![CDATA[Local Pages]]></category>
-		<guid isPermaLink="false">/?p=1184</guid>
-
-					<description><![CDATA[An ecommerce site for a Florida based motorcycle garage apparal company.]]></description>
-										<content:encoded><![CDATA[
-<p>An ecommerce site for a Florida based motorcycle garage apparal company. </p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/ls-fabworks/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/pyrenese-pack/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>JB Alcohol Delivery</title>
-		<link>/jb-alcohol-delivery/</link>
-					<comments>/jb-alcohol-delivery/#respond</comments>
+		<link>https://thecoolmoon.com/jb-alcohol-delivery/</link>
+					<comments>https://thecoolmoon.com/jb-alcohol-delivery/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 09 Mar 2023 16:18:46 +0000</pubDate>
 				<category><![CDATA[E-Commerce]]></category>
-		<guid isPermaLink="false">/?p=639</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=639</guid>
 
 					<description><![CDATA[This online store handles both local and and national alcohol deliveries. Using both conventional payment processes as well as WhatsApp, QR and [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>This online store handles both local and and national alcohol deliveries. Using both conventional payment processes as well as WhatsApp, QR and API&#8217;s for local delivery.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/jb-alcohol-delivery/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/jb-alcohol-delivery/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>DvBZ The Ripper</title>
-		<link>/dvbz-the-ripper/</link>
+		<link>https://thecoolmoon.com/dvbz-the-ripper/</link>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 09 Mar 2023 13:32:52 +0000</pubDate>
 				<category><![CDATA[E-Commerce]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=555</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=555</guid>
 
 					<description><![CDATA[A simple, lightweight website with multiple features. An event booking, music portfolio and (upcoming) store. ]]></description>
 										<content:encoded><![CDATA[
@@ -173,15 +205,15 @@
 			</item>
 		<item>
 		<title>Buttcoin</title>
-		<link>/buttcoin/</link>
-					<comments>/buttcoin/#respond</comments>
+		<link>https://thecoolmoon.com/buttcoin/</link>
+					<comments>https://thecoolmoon.com/buttcoin/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 09 Mar 2023 13:30:37 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
 		<category><![CDATA[E-Commerce]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=548</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=548</guid>
 
 					<description><![CDATA[I’m a core member and lead developer of this cryptocurrency/meme coin. The site I manage includes webstore and blog. I also community [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -192,7 +224,7 @@
 <p>The site I manage includes webstore and blog. I also community manage the Discord, Reddit and social media channels withother members of the team.<a rel="noreferrer noopener" href="https://buttcoin.cc/" target="_blank"></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/buttcoin/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/buttcoin/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

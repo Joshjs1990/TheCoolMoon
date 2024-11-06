@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Promotional &#8211; TheCoolMoon</title>
-	<atom:link href="/category/promotional/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://thecoolmoon.com/category/promotional/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thecoolmoon.com/</link>
 	<description></description>
-	<lastBuildDate>Wed, 23 Oct 2024 14:35:39 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Nov 2024 07:53:22 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=6.6.2</generator>
 
 <image>
-	<url>/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
+	<url>https://thecoolmoon.com/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
 	<title>Promotional &#8211; TheCoolMoon</title>
-	<link>/</link>
+	<link>https://thecoolmoon.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>N2 Clay Pottery Studio</title>
-		<link>/n2-clay-pottery-studio/</link>
-					<comments>/n2-clay-pottery-studio/#respond</comments>
+		<link>https://thecoolmoon.com/n2-clay-pottery-studio/</link>
+					<comments>https://thecoolmoon.com/n2-clay-pottery-studio/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 23 Oct 2024 14:19:43 +0000</pubDate>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=3105</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=3105</guid>
 
 					<description><![CDATA[N2 Clay, a New York-based pottery studio, sought a modern and intuitive website to showcase their unique craftsmanship and offer a seamless [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -56,15 +56,15 @@
 <p>The site was optimized for mobile and desktop, ensuring a responsive experience across all devices. With the new platform, N2 Clay can effectively highlight their collections, promote events, and engage with the local artistic community.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/n2-clay-pottery-studio/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/n2-clay-pottery-studio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Cyber Shepherd</title>
-		<link>/cyber-shepherd/</link>
-					<comments>/cyber-shepherd/#respond</comments>
+		<link>https://thecoolmoon.com/cyber-shepherd/</link>
+					<comments>https://thecoolmoon.com/cyber-shepherd/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 31 Aug 2024 21:09:41 +0000</pubDate>
@@ -72,7 +72,7 @@
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=3009</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=3009</guid>
 
 					<description><![CDATA[Client: Cyber Shepherd Industry: Digital Security Platform: WordPress Services Provided: Web Design, Web Development, UX/UI Design, Responsive Design, SEO Optimization Overview Cyber [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -199,15 +199,15 @@
 <p>The redesign of Cyber Shepherd’s website successfully delivered a high-performing, user-friendly platform that effectively showcased their expertise in digital security. By combining a modern design with robust functionality, I helped Cyber Shepherd boost engagement, increase lead gener</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/cyber-shepherd/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/cyber-shepherd/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>No Nonsense Agency</title>
-		<link>/no-nonsense-agency/</link>
-					<comments>/no-nonsense-agency/#respond</comments>
+		<link>https://thecoolmoon.com/no-nonsense-agency/</link>
+					<comments>https://thecoolmoon.com/no-nonsense-agency/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 23 May 2024 08:16:15 +0000</pubDate>
@@ -218,7 +218,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2911</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=2911</guid>
 
 					<description><![CDATA[No Nonsense Digital Marketing, a company known for its straightforward approach to digital marketing, sought a website that reflected its ethos: clear, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -457,15 +457,15 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/no-nonsense-agency/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/no-nonsense-agency/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Hubb Home Services</title>
-		<link>/hubb-home-services/</link>
-					<comments>/hubb-home-services/#respond</comments>
+		<link>https://thecoolmoon.com/hubb-home-services/</link>
+					<comments>https://thecoolmoon.com/hubb-home-services/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 22 May 2024 19:39:37 +0000</pubDate>
@@ -473,7 +473,7 @@
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2883</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=2883</guid>
 
 					<description><![CDATA[Hubb Home Services, a prominent home inspection company in New York and the surrounding areas, recognized the need to modernize their online [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -502,190 +502,63 @@
 </ol>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/hubb-home-services/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/hubb-home-services/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Frameless Project</title>
-		<link>/frameless-project/</link>
-					<comments>/frameless-project/#respond</comments>
+		<title> New York Carpet Care </title>
+		<link>https://thecoolmoon.com/new-york-carpet-care/</link>
+					<comments>https://thecoolmoon.com/new-york-carpet-care/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
-		<pubDate>Thu, 16 Nov 2023 16:55:36 +0000</pubDate>
+		<pubDate>Tue, 06 Feb 2024 07:52:00 +0000</pubDate>
 				<category><![CDATA[Blog]]></category>
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Logo Design]]></category>
-		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2366</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=3124</guid>
 
-					<description><![CDATA[Overview: Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local [&#8230;]]]></description>
+					<description><![CDATA[For New York Carpet Care, I led a comprehensive web design and development project, managing all phases from branding to the final [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p></p>
+<p>For New York Carpet Care, I led a comprehensive web design and development project, managing all phases from branding to the final build and SEO optimization. The aim was to create a modern, user-friendly site that represented the company’s high standards in carpet care services while establishing a strong digital presence.</p>
 
 
 
-<p><strong>Overview:</strong> Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local photography community but also showcased the diverse talents of its photographers. This case study delves into the development of Frameless Project&#8217;s website, a project I was commissioned to undertake.</p>
+<p><strong>Project Overview:</strong></p>
 
 
 
-<p><strong>Objective:</strong> The primary goal was to construct a website from the ground up, drawing inspiration directly from the essence of photography itself. The vision was to create a clean, distinctive digital space that would prominently feature the captivating images captured by local photographers, fostering community engagement and appreciation for the art.</p>
+<p>• <strong>Branding</strong>: Developed a cohesive brand identity that communicates trust, professionalism, and expertise in the carpet care industry.</p>
 
 
 
-<p><strong>Approach:</strong></p>
+<p>• <strong>Design and User Experience</strong>: Crafted an intuitive, visually appealing layout with a clean design to ensure ease of navigation and positive user engagement.</p>
 
 
 
-<ol class="wp-block-list">
-<li><strong>Conceptualization:</strong>
-<ul class="wp-block-list">
-<li>Collaborated with Frameless Project to understand their mission, vision, and target audience.</li>
+<p>• <strong>Development</strong>: Built a responsive, fast-loading website optimized for various devices and browsers.</p>
 
 
 
-<li>Derived inspiration from the rich and diverse portfolio of local photographers associated with the project.</li>
-</ul>
-</li>
+<p>• <strong>SEO Optimization</strong>: Implemented best practices for search engine optimization to boost visibility and organic traffic, ensuring the site ranks competitively in local and industry-specific searches.</p>
 
 
 
-<li><strong>Design Philosophy:</strong>
-<ul class="wp-block-list">
-<li>Opted for a frameless design approach, mirroring the openness and expansiveness inherent in photography.</li>
-
-
-
-<li>Prioritized a minimalist aesthetic to ensure that the focus remained on the showcased images.</li>
-</ul>
-</li>
-
-
-
-<li><strong>Technical Implementation:</strong>
-<ul class="wp-block-list">
-<li>Utilized cutting-edge web development technologies to build the website from scratch.</li>
-
-
-
-<li>Implemented responsive design principles to ensure an optimal viewing experience across various devices and screen sizes.</li>
-</ul>
-</li>
-
-
-
-<li><strong>User Experience (UX):</strong>
-<ul class="wp-block-list">
-<li>Prioritized an intuitive navigation system, allowing users to seamlessly explore the website and discover the featured photographers.</li>
-
-
-
-<li>Implemented a user-friendly interface that emphasized visual content, providing an immersive experience for visitors.</li>
-</ul>
-</li>
-
-
-
-<li><strong>Community Integration:</strong>
-<ul class="wp-block-list">
-<li>Incorporated features to facilitate community engagement, such as user comments, likes, and the ability to share images on social media platforms.</li>
-
-
-
-<li>Developed a user registration system to encourage participation and interaction within the Frameless Project community.</li>
-</ul>
-</li>
-</ol>
-
-
-
-<p><strong>Outcome:</strong> The Frameless Project website successfully achieved its objectives:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Visual Focus:</strong> The minimalist design and frameless layout effectively highlighted the showcased images, allowing them to take center stage.</li>
-
-
-
-<li><strong>Community Engagement:</strong> The integrated features fostered a sense of community, encouraging photographers and enthusiasts to connect, share insights, and appreciate each other&#8217;s work.</li>
-
-
-
-<li><strong>Responsive Design:</strong> The website provided a seamless and visually appealing experience across a variety of devices, ensuring accessibility for a diverse audience.</li>
-</ul>
-
-
-
-<p>The Frameless Project website stands as a testament to the successful collaboration between the project stakeholders and the development team. By combining a deep understanding of the community&#8217;s needs with a commitment to a visually immersive user experience, the website has become a pivotal platform for local photographers and photography enthusiasts alike, contributing to the growth and recognition of the Philadelphia photography scene.</p>
+<p>The result was an engaging and functional website that not only strengthened the brand but also enhanced user experience and increased client reach.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/frameless-project/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Game Developer&#8217;s Digital CV</title>
-		<link>/game-developers-digital-cv/</link>
-					<comments>/game-developers-digital-cv/#respond</comments>
-		
-		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
-		<pubDate>Wed, 01 Nov 2023 18:56:29 +0000</pubDate>
-				<category><![CDATA[Blog]]></category>
-		<category><![CDATA[Portfolio Site]]></category>
-		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=2372</guid>
-
-					<description><![CDATA[This is a demo website of one-page digital CV for a game developer. Project Scope: The idea was to also have a [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="https://gdev.nq.thecoolmoon.com/" target="_blank" rel="noreferrer noopener">Visit Site</a></div>
-</div>
-
-
-
-<p></p>
-
-
-
-<p>This is a demo website of one-page digital CV for a game developer.</p>
-
-
-
-<p><strong>Project Scope:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>Design and develop a one-page website</li>
-
-
-
-<li>Integrate a blog section where case studies can be added as well as insights, and experiences in the gaming industry.</li>
-
-
-
-<li>Ensure responsive design for optimal viewing across various devices.</li>
-</ul>
-
-
-
-<p>The idea was to also have a futuristic, gaming feel without it being too &#8220;gimmicky&#8221;.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/game-developers-digital-cv/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/new-york-carpet-care/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Business Leads Website</title>
-		<link>/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/</link>
-					<comments>/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/#respond</comments>
+		<link>https://thecoolmoon.com/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/</link>
+					<comments>https://thecoolmoon.com/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Tue, 17 Oct 2023 14:33:16 +0000</pubDate>
@@ -693,7 +566,7 @@
 		<category><![CDATA[Logo Design]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=1834</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1834</guid>
 
 					<description><![CDATA[In today’s digital age, a compelling online presence is paramount for businesses seeking success. A well-designed landing page can be a game-changer, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -786,15 +659,15 @@
 <p>By combining strategic design, compelling content, and SEO optimization, the one-page landing page for <a href="https://leadsolutionsexpert.com/">Lead Solution Expert</a> emerged as a success story. The seamless user experience, coupled with enhanced search engine visibility, not only attracted more visitors but also converted them into valuable leads. This case study demonstrates the importance of a well-crafted landing page in establishing a strong online presence, driving organic traffic, and ultimately, boosting business growth.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/boosting-business-leads-a-case-study-in-crafting-a-professional-one-page-landing-page/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>The Auto Plug &#8211; Car Leasing</title>
-		<link>/the-auto-plug-car-leasing/</link>
-					<comments>/the-auto-plug-car-leasing/#respond</comments>
+		<link>https://thecoolmoon.com/the-auto-plug-car-leasing/</link>
+					<comments>https://thecoolmoon.com/the-auto-plug-car-leasing/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 14 Oct 2023 15:45:40 +0000</pubDate>
@@ -803,7 +676,7 @@
 		<category><![CDATA[Logo Design]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=1813</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1813</guid>
 
 					<description><![CDATA[Client Overview: The Auto Plug, a prominent car leasing company, approached us with a unique challenge: to revamp their online presence entirely. [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -906,21 +779,21 @@
 <p><strong>Conclusion:</strong> By revamping The Auto Plug’s online presence, we successfully transformed their digital landscape. The integration of advanced forms, coupled with effective SEO strategies, not only increased traffic and conversions but also strengthened their brand image. The revamped website now serves as a powerful tool, engaging visitors and converting them into satisfied customers, ensuring The Auto Plug’s continued success in the competitive car leasing industry.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/the-auto-plug-car-leasing/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/the-auto-plug-car-leasing/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Pyrenese Pack</title>
-		<link>/pyrenese-pack/</link>
-					<comments>/pyrenese-pack/#respond</comments>
+		<link>https://thecoolmoon.com/pyrenese-pack/</link>
+					<comments>https://thecoolmoon.com/pyrenese-pack/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 23 Sep 2023 13:58:58 +0000</pubDate>
 				<category><![CDATA[E-Commerce]]></category>
 		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=1762</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1762</guid>
 
 					<description><![CDATA[Client Overview: Pyrenees Pack is an innovative NFT (Non-Fungible Token) project. The project combines art and technology to create a unique platform [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -987,15 +860,15 @@
 <p>This case study demonstrates my ability to create a tailored web solution for an NFT project, aligning with the client&#8217;s vision of minimalistic simplicity while offering a secure and user-friendly platform for NFT collectors.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/pyrenese-pack/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/pyrenese-pack/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>RB Finances</title>
-		<link>/financial-website/</link>
-					<comments>/financial-website/#respond</comments>
+		<link>https://thecoolmoon.com/financial-website/</link>
+					<comments>https://thecoolmoon.com/financial-website/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Sat, 23 Sep 2023 13:52:54 +0000</pubDate>
@@ -1004,7 +877,7 @@
 		<category><![CDATA[Local Pages]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=1753</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1753</guid>
 
 					<description><![CDATA[Client Overview: RB Finances is a startup financial services company dedicated to providing personalized financing alternatives for small and medium-sized businesses (SMBs). [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1223,7 +1096,82 @@
 <p>This case study showcases my ability to design and develop a tailored web solution for a financial services startup, enabling them to reach and serve their target audience effectively.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/financial-website/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/financial-website/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pixel Vans</title>
+		<link>https://thecoolmoon.com/marketing-agency-california/</link>
+					<comments>https://thecoolmoon.com/marketing-agency-california/#respond</comments>
+		
+		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
+		<pubDate>Thu, 10 Aug 2023 12:41:28 +0000</pubDate>
+				<category><![CDATA[Local Pages]]></category>
+		<category><![CDATA[Logo Design]]></category>
+		<category><![CDATA[Promotional]]></category>
+		<category><![CDATA[SEO]]></category>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=1729</guid>
+
+					<description><![CDATA[Pixel Vans is a dynamic advertising company based in Chicago, specializing in Mobile Billboard advertising services. Their unique approach leverages eye-catching digital [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Pixel Vans is a dynamic advertising company based in Chicago, specializing in Mobile Billboard advertising services. Their unique approach leverages eye-catching digital displays on vans to reach audiences in high-traffic areas, such as local sports events, festivals, and city centers, generating over 30,000 impressions daily.</p>
+
+
+
+<p><strong>Project Objectives:</strong></p>
+
+
+
+<p>Pixel Vans approached our web design and development agency with the goal of creating a compelling online platform to showcase their innovative advertising services. The primary objectives of the project were as follows:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Modern and Dynamic Design:</strong> Develop a visually appealing and dynamic website that mirrors the creativity and vibrancy of Pixel Vans&#8217; advertising approach.</li>
+
+
+
+<li><strong>Information Accessibility:</strong> Ensure potential clients can easily access detailed information about their Mobile Billboard services, coverage areas, and case studies.</li>
+
+
+
+<li><strong>Audience Engagement:</strong> Create an engaging platform with interactive features that educate and captivate visitors about the advertising potential.</li>
+
+
+
+<li><strong>Lead Generation:</strong> Facilitate the submission of inquiries and requests for quotes to attract potential clients.</li>
+
+
+
+<li><strong>SEO Optimization:</strong> Implement SEO best practices to enhance search engine visibility and attract local businesses and event organizers.</li>
+</ol>
+
+
+
+<p><strong>Results:</strong></p>
+
+
+
+<p>The Pixel Vans website has been an outstanding success, effectively showcasing their innovative Mobile Billboard advertising services. Key outcomes include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A modern and dynamic online presence that reflects Pixel Vans&#8217; creativity.</li>
+
+
+
+<li>Increased user engagement and inquiries through an intuitive submission system.</li>
+
+
+
+<li>Improved search engine visibility, attracting local businesses and event organizers.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://thecoolmoon.com/marketing-agency-california/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

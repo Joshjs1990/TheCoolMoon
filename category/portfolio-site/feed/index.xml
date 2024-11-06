@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Portfolio Site &#8211; TheCoolMoon</title>
-	<atom:link href="/category/portfolio-site/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://thecoolmoon.com/category/portfolio-site/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thecoolmoon.com/</link>
 	<description></description>
 	<lastBuildDate>Wed, 23 Oct 2024 14:35:39 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=6.6.2</generator>
 
 <image>
-	<url>/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
+	<url>https://thecoolmoon.com/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
 	<title>Portfolio Site &#8211; TheCoolMoon</title>
-	<link>/</link>
+	<link>https://thecoolmoon.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>N2 Clay Pottery Studio</title>
-		<link>/n2-clay-pottery-studio/</link>
-					<comments>/n2-clay-pottery-studio/#respond</comments>
+		<link>https://thecoolmoon.com/n2-clay-pottery-studio/</link>
+					<comments>https://thecoolmoon.com/n2-clay-pottery-studio/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Wed, 23 Oct 2024 14:19:43 +0000</pubDate>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=3105</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=3105</guid>
 
 					<description><![CDATA[N2 Clay, a New York-based pottery studio, sought a modern and intuitive website to showcase their unique craftsmanship and offer a seamless [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -56,15 +56,15 @@
 <p>The site was optimized for mobile and desktop, ensuring a responsive experience across all devices. With the new platform, N2 Clay can effectively highlight their collections, promote events, and engage with the local artistic community.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/n2-clay-pottery-studio/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/n2-clay-pottery-studio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>No Nonsense Agency</title>
-		<link>/no-nonsense-agency/</link>
-					<comments>/no-nonsense-agency/#respond</comments>
+		<link>https://thecoolmoon.com/no-nonsense-agency/</link>
+					<comments>https://thecoolmoon.com/no-nonsense-agency/#respond</comments>
 		
 		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
 		<pubDate>Thu, 23 May 2024 08:16:15 +0000</pubDate>
@@ -75,7 +75,7 @@
 		<category><![CDATA[Portfolio Site]]></category>
 		<category><![CDATA[Promotional]]></category>
 		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2911</guid>
+		<guid isPermaLink="false">https://thecoolmoon.com/?p=2911</guid>
 
 					<description><![CDATA[No Nonsense Digital Marketing, a company known for its straightforward approach to digital marketing, sought a website that reflected its ethos: clear, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -314,182 +314,7 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/no-nonsense-agency/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Frameless Project</title>
-		<link>/frameless-project/</link>
-					<comments>/frameless-project/#respond</comments>
-		
-		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
-		<pubDate>Thu, 16 Nov 2023 16:55:36 +0000</pubDate>
-				<category><![CDATA[Blog]]></category>
-		<category><![CDATA[Local Pages]]></category>
-		<category><![CDATA[Logo Design]]></category>
-		<category><![CDATA[Portfolio Site]]></category>
-		<category><![CDATA[Promotional]]></category>
-		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=2366</guid>
-
-					<description><![CDATA[Overview: Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<p></p>
-
-
-
-<p><strong>Overview:</strong> Frameless Project, a Philadelphia-based photography initiative, sought to create a website that not only served as a hub for the local photography community but also showcased the diverse talents of its photographers. This case study delves into the development of Frameless Project&#8217;s website, a project I was commissioned to undertake.</p>
-
-
-
-<p><strong>Objective:</strong> The primary goal was to construct a website from the ground up, drawing inspiration directly from the essence of photography itself. The vision was to create a clean, distinctive digital space that would prominently feature the captivating images captured by local photographers, fostering community engagement and appreciation for the art.</p>
-
-
-
-<p><strong>Approach:</strong></p>
-
-
-
-<ol class="wp-block-list">
-<li><strong>Conceptualization:</strong>
-<ul class="wp-block-list">
-<li>Collaborated with Frameless Project to understand their mission, vision, and target audience.</li>
-
-
-
-<li>Derived inspiration from the rich and diverse portfolio of local photographers associated with the project.</li>
-</ul>
-</li>
-
-
-
-<li><strong>Design Philosophy:</strong>
-<ul class="wp-block-list">
-<li>Opted for a frameless design approach, mirroring the openness and expansiveness inherent in photography.</li>
-
-
-
-<li>Prioritized a minimalist aesthetic to ensure that the focus remained on the showcased images.</li>
-</ul>
-</li>
-
-
-
-<li><strong>Technical Implementation:</strong>
-<ul class="wp-block-list">
-<li>Utilized cutting-edge web development technologies to build the website from scratch.</li>
-
-
-
-<li>Implemented responsive design principles to ensure an optimal viewing experience across various devices and screen sizes.</li>
-</ul>
-</li>
-
-
-
-<li><strong>User Experience (UX):</strong>
-<ul class="wp-block-list">
-<li>Prioritized an intuitive navigation system, allowing users to seamlessly explore the website and discover the featured photographers.</li>
-
-
-
-<li>Implemented a user-friendly interface that emphasized visual content, providing an immersive experience for visitors.</li>
-</ul>
-</li>
-
-
-
-<li><strong>Community Integration:</strong>
-<ul class="wp-block-list">
-<li>Incorporated features to facilitate community engagement, such as user comments, likes, and the ability to share images on social media platforms.</li>
-
-
-
-<li>Developed a user registration system to encourage participation and interaction within the Frameless Project community.</li>
-</ul>
-</li>
-</ol>
-
-
-
-<p><strong>Outcome:</strong> The Frameless Project website successfully achieved its objectives:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Visual Focus:</strong> The minimalist design and frameless layout effectively highlighted the showcased images, allowing them to take center stage.</li>
-
-
-
-<li><strong>Community Engagement:</strong> The integrated features fostered a sense of community, encouraging photographers and enthusiasts to connect, share insights, and appreciate each other&#8217;s work.</li>
-
-
-
-<li><strong>Responsive Design:</strong> The website provided a seamless and visually appealing experience across a variety of devices, ensuring accessibility for a diverse audience.</li>
-</ul>
-
-
-
-<p>The Frameless Project website stands as a testament to the successful collaboration between the project stakeholders and the development team. By combining a deep understanding of the community&#8217;s needs with a commitment to a visually immersive user experience, the website has become a pivotal platform for local photographers and photography enthusiasts alike, contributing to the growth and recognition of the Philadelphia photography scene.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/frameless-project/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Game Developer&#8217;s Digital CV</title>
-		<link>/game-developers-digital-cv/</link>
-					<comments>/game-developers-digital-cv/#respond</comments>
-		
-		<dc:creator><![CDATA[joshstewart90]]></dc:creator>
-		<pubDate>Wed, 01 Nov 2023 18:56:29 +0000</pubDate>
-				<category><![CDATA[Blog]]></category>
-		<category><![CDATA[Portfolio Site]]></category>
-		<category><![CDATA[Promotional]]></category>
-		<guid isPermaLink="false">/?p=2372</guid>
-
-					<description><![CDATA[This is a demo website of one-page digital CV for a game developer. Project Scope: The idea was to also have a [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="https://gdev.nq.thecoolmoon.com/" target="_blank" rel="noreferrer noopener">Visit Site</a></div>
-</div>
-
-
-
-<p></p>
-
-
-
-<p>This is a demo website of one-page digital CV for a game developer.</p>
-
-
-
-<p><strong>Project Scope:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>Design and develop a one-page website</li>
-
-
-
-<li>Integrate a blog section where case studies can be added as well as insights, and experiences in the gaming industry.</li>
-
-
-
-<li>Ensure responsive design for optimal viewing across various devices.</li>
-</ul>
-
-
-
-<p>The idea was to also have a futuristic, gaming feel without it being too &#8220;gimmicky&#8221;.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/game-developers-digital-cv/feed/</wfw:commentRss>
+					<wfw:commentRss>https://thecoolmoon.com/no-nonsense-agency/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
