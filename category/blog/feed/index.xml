@@ -12,13 +12,13 @@
 	<atom:link href="https://thecoolmoon.com/category/blog/feed/" rel="self" type="application/rss+xml" />
 	<link>https://thecoolmoon.com/</link>
 	<description></description>
-	<lastBuildDate>Wed, 06 Nov 2024 08:01:24 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 06 Jan 2025 10:26:58 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.6.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 
 <image>
 	<url>https://thecoolmoon.com/wp-content/uploads/2024/05/cropped-android-chrome-512x512-1-e1715672158277-32x32.png</url>
@@ -240,6 +240,12 @@
 
 					<description><![CDATA[Client: Cyber Shepherd Industry: Digital Security Platform: WordPress Services Provided: Web Design, Web Development, UX/UI Design, Responsive Design, SEO Optimization Overview Cyber [&#8230;]]]></description>
 										<content:encoded><![CDATA[
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-black-background-color has-text-color has-background has-link-color wp-element-button" href="https://cybershepherd.com/&quot;">Visit Site</a></div>
+</div>
+
+
+
 <p><strong>Client:</strong> Cyber Shepherd</p>
 
 
@@ -360,7 +366,15 @@
 
 
 
-<p>The redesign of Cyber Shepherd’s website successfully delivered a high-performing, user-friendly platform that effectively showcased their expertise in digital security. By combining a modern design with robust functionality, I helped Cyber Shepherd boost engagement, increase lead gener</p>
+<p>The redesign of Cyber Shepherd’s website successfully delivered a high-performing, user-friendly platform that effectively showcased their expertise in digital security. By combining a modern design with robust functionality, I helped Cyber Shepherd boost engagement, increase lead generation.</p>
+
+
+
+<p><a href="https://cybershepherd.com/&quot;">Visit Site</a></p>
+
+
+
+<p></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://thecoolmoon.com/cyber-shepherd/feed/</wfw:commentRss>
