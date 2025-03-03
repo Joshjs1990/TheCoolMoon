@@ -1,4 +1,4 @@
-/*! elementor - v3.27.0 - 18-02-2025 */
+/*! elementor - v3.25.0 - 10-12-2024 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -77,8 +77,8 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _react = __webpack_require__(/*! react */ "react");
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function useAjax() {
   var _useState = (0, _react.useState)(null),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
@@ -100,7 +100,7 @@ function useAjax() {
       }
     };
   var runRequest = /*#__PURE__*/function () {
-    var _ref = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee(config) {
+    var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(config) {
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -203,8 +203,8 @@ var _query = __webpack_require__(/*! @elementor/query */ "../node_modules/@eleme
 var _editorV1Adapters = __webpack_require__(/*! @elementor/editor-v1-adapters */ "@elementor/editor-v1-adapters");
 var _checklist = _interopRequireDefault(__webpack_require__(/*! ./components/checklist */ "../modules/checklist/assets/js/app/components/checklist.js"));
 var _functions = __webpack_require__(/*! ../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var App = function App() {
   var isRTL = elementorCommon.config.isRTL,
     _useQuery = (0, _query.useQuery)({
@@ -232,9 +232,9 @@ var App = function App() {
   (0, _react.useEffect)(function () {
     fetchData();
     return (0, _editorV1Adapters.__privateListenTo)((0, _editorV1Adapters.commandEndEvent)('document/save/save'), function (_ref) {
-      var _args$document;
+      var _args$document, _args$document$config;
       var args = _ref.args;
-      if ('kit' === (args === null || args === void 0 || (_args$document = args.document) === null || _args$document === void 0 || (_args$document = _args$document.config) === null || _args$document === void 0 ? void 0 : _args$document.type)) {
+      if ('kit' === (args === null || args === void 0 ? void 0 : (_args$document = args.document) === null || _args$document === void 0 ? void 0 : (_args$document$config = _args$document.config) === null || _args$document$config === void 0 ? void 0 : _args$document$config.type)) {
         fetchData();
       }
     });
@@ -251,7 +251,8 @@ var App = function App() {
     userProgress: userProgress
   })));
 };
-var _default = exports["default"] = App;
+var _default = App;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -302,7 +303,7 @@ var ChecklistCardContent = function ChecklistCardContent(_ref) {
     isMarkedCompleted = step[IS_MARKED_COMPLETED],
     shouldShowMarkAsDone = !isAbsoluteCompleted && !isImmutableCompleted && !promotionData;
   var redirectHandler = /*#__PURE__*/function () {
-    var _ref2 = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+    var _ref2 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -332,7 +333,7 @@ var ChecklistCardContent = function ChecklistCardContent(_ref) {
     };
   }();
   var toggleMarkAsDone = /*#__PURE__*/function () {
-    var _ref3 = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee2() {
+    var _ref3 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee2() {
       var currState;
       return _regenerator.default.wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
@@ -403,7 +404,8 @@ var ChecklistCardContent = function ChecklistCardContent(_ref) {
     onClick: redirectHandler
   }, ctaText)));
 };
-var _default = exports["default"] = ChecklistCardContent;
+var _default = ChecklistCardContent;
+exports["default"] = _default;
 ChecklistCardContent.propTypes = {
   step: _propTypes.default.object.isRequired,
   setSteps: _propTypes.default.func.isRequired
@@ -433,8 +435,8 @@ var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
 var _icons = __webpack_require__(/*! @elementor/icons */ "@elementor/icons");
 var _functions = __webpack_require__(/*! ../../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
 var _consts = __webpack_require__(/*! ../../utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var PROMOTION_DATA = _consts.STEP.PROMOTION_DATA;
 var TITLE = _consts.MIXPANEL_CHECKLIST_STEPS.TITLE,
   ACCORDION_SECTION = _consts.MIXPANEL_CHECKLIST_STEPS.ACCORDION_SECTION;
@@ -501,7 +503,8 @@ function CheckListItem(props) {
     setSteps: setSteps
   })));
 }
-var _default = exports["default"] = CheckListItem;
+var _default = CheckListItem;
+exports["default"] = _default;
 CheckListItem.propTypes = {
   step: _propTypes.default.object.isRequired,
   expandedIndex: _propTypes.default.number,
@@ -534,8 +537,8 @@ var _checklistItem = _interopRequireDefault(__webpack_require__(/*! ./checklist-
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 var _successMessage = _interopRequireDefault(__webpack_require__(/*! ./success-message */ "../modules/checklist/assets/js/app/components/success-message.js"));
 var _functions = __webpack_require__(/*! ../../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var ChecklistWrapper = function ChecklistWrapper(_ref) {
   var steps = _ref.steps,
     setSteps = _ref.setSteps,
@@ -567,7 +570,8 @@ var ChecklistWrapper = function ChecklistWrapper(_ref) {
     }));
   })), isChecklistCompleted ? /*#__PURE__*/_react.default.createElement(_successMessage.default, null) : null);
 };
-var _default = exports["default"] = ChecklistWrapper;
+var _default = ChecklistWrapper;
+exports["default"] = _default;
 ChecklistWrapper.propTypes = {
   steps: _propTypes.default.array.isRequired,
   setSteps: _propTypes.default.func.isRequired,
@@ -602,8 +606,8 @@ var _checklistWrapper = _interopRequireDefault(__webpack_require__(/*! ./checkli
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
 var _consts = __webpack_require__(/*! ../../utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
 var _functions = __webpack_require__(/*! ../../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var IS_POPUP_MINIMIZED = _consts.USER_PROGRESS.IS_POPUP_MINIMIZED;
 var Checklist = function Checklist(props) {
   var _useState = (0, _react.useState)(props.steps),
@@ -615,7 +619,7 @@ var Checklist = function Checklist(props) {
     isMinimized = _useState4[0],
     setIsMinimized = _useState4[1];
   var toggleIsMinimized = /*#__PURE__*/function () {
-    var _ref = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
       var currState;
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
@@ -671,7 +675,8 @@ Checklist.propTypes = {
   steps: PropTypes.array.isRequired,
   userProgress: PropTypes.object.isRequired
 };
-var _default = exports["default"] = Checklist;
+var _default = Checklist;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -702,8 +707,8 @@ var React = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _functions = __webpack_require__(/*! ../../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
 var _consts = __webpack_require__(/*! ../../utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
 var _icons = __webpack_require__(/*! @elementor/icons */ "@elementor/icons");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME = _consts.USER_PROGRESS.CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME;
 var CHECKLIST_HEADER_CLOSE = _consts.MIXPANEL_CHECKLIST_STEPS.CHECKLIST_HEADER_CLOSE;
 var Header = function Header(_ref) {
@@ -717,7 +722,7 @@ var Header = function Header(_ref) {
     userProgress = _useQuery.data,
     closedForFirstTime = (userProgress === null || userProgress === void 0 ? void 0 : userProgress[CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME]) || false;
   var closeChecklist = /*#__PURE__*/function () {
-    var _ref2 = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+    var _ref2 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -780,7 +785,8 @@ Header.propTypes = {
   isMinimized: _propTypes.default.bool.isRequired,
   toggleIsMinimized: _propTypes.default.func.isRequired
 };
-var _default = exports["default"] = Header;
+var _default = Header;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -827,7 +833,8 @@ var Progress = function Progress(_ref) {
     color: "text.secondary"
   }, "".concat(Math.round(progress), "%"))));
 };
-var _default = exports["default"] = Progress;
+var _default = Progress;
+exports["default"] = _default;
 Progress.propTypes = {
   steps: _propTypes.default.array.isRequired
 };
@@ -850,7 +857,6 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
-var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 var ReminderModal = function ReminderModal(_ref) {
   var setOpen = _ref.setOpen;
@@ -869,16 +875,17 @@ var ReminderModal = function ReminderModal(_ref) {
     sx: {
       mb: 2
     }
-  }, (0, _i18n.__)('Looking for your Launchpad Checklist?', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+  }, "Looking for your Launchpad Checklist?"), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "body2"
-  }, (0, _i18n.__)('Click the launch icon to continue setting up your site.', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.CardActions, null, /*#__PURE__*/_react.default.createElement(_ui.Button, {
+  }, "Click the launch icon to continue setting up your site.")), /*#__PURE__*/_react.default.createElement(_ui.CardActions, null, /*#__PURE__*/_react.default.createElement(_ui.Button, {
     size: "small",
     variant: "contained",
     className: "infotip-first-time-closed-button",
     onClick: closeChecklist
-  }, (0, _i18n.__)('Got it', 'elementor'))));
+  }, "Got it")));
 };
-var _default = exports["default"] = ReminderModal;
+var _default = ReminderModal;
+exports["default"] = _default;
 ReminderModal.propTypes = {
   setOpen: _propTypes.default.func.isRequired
 };
@@ -892,6 +899,7 @@ ReminderModal.propTypes = {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -902,12 +910,11 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
-var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _useAjax2 = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-ajax */ "../app/assets/js/hooks/use-ajax.js"));
 var _functions = __webpack_require__(/*! ../../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
 var _consts = __webpack_require__(/*! ../../utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var ACTION = _consts.MIXPANEL_CHECKLIST_STEPS.ACTION,
   WELL_DONE = _consts.MIXPANEL_CHECKLIST_STEPS.WELL_DONE;
 var SuccessMessage = function SuccessMessage() {
@@ -959,11 +966,11 @@ var SuccessMessage = function SuccessMessage() {
   }, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "h6",
     color: "text.primary"
-  }, (0, _i18n.__)('You\'re on your way!', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+  }, __('You\'re on your way!', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "body2",
     color: "text.secondary",
     component: "p"
-  }, (0, _i18n.__)('With these steps, you\'ve got a great base for a robust website. Enjoy your web creation journey!', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.CardActions, {
+  }, __('With these steps, you\'ve got a great base for a robust website. Enjoy your web creation journey!', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.CardActions, {
     sx: {
       justifyContent: 'center'
     }
@@ -972,9 +979,10 @@ var SuccessMessage = function SuccessMessage() {
     size: "small",
     variant: "contained",
     onClick: hideChecklist
-  }, (0, _i18n.__)('Got it', 'elementor'))));
+  }, __('Got it', 'elementor'))));
 };
-var _default = exports["default"] = SuccessMessage;
+var _default = SuccessMessage;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1023,25 +1031,29 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = exports.Steps = void 0;
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
-function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-var Steps = exports.Steps = /*#__PURE__*/function (_$e$modules$CommandDa) {
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var Steps = /*#__PURE__*/function (_$e$modules$CommandDa) {
+  (0, _inherits2.default)(Steps, _$e$modules$CommandDa);
+  var _super = _createSuper(Steps);
   function Steps() {
     (0, _classCallCheck2.default)(this, Steps);
-    return _callSuper(this, Steps, arguments);
+    return _super.apply(this, arguments);
   }
-  (0, _inherits2.default)(Steps, _$e$modules$CommandDa);
-  return (0, _createClass2.default)(Steps, null, [{
+  (0, _createClass2.default)(Steps, null, [{
     key: "getEndpointFormat",
     value: function getEndpointFormat() {
       return 'checklist/steps/{id}';
     }
   }]);
+  return Steps;
 }($e.modules.CommandData);
-var _default = exports["default"] = Steps;
+exports.Steps = Steps;
+var _default = Steps;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1061,25 +1073,29 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = exports.UserProgress = void 0;
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
-function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-var UserProgress = exports.UserProgress = /*#__PURE__*/function (_$e$modules$CommandDa) {
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var UserProgress = /*#__PURE__*/function (_$e$modules$CommandDa) {
+  (0, _inherits2.default)(UserProgress, _$e$modules$CommandDa);
+  var _super = _createSuper(UserProgress);
   function UserProgress() {
     (0, _classCallCheck2.default)(this, UserProgress);
-    return _callSuper(this, UserProgress, arguments);
+    return _super.apply(this, arguments);
   }
-  (0, _inherits2.default)(UserProgress, _$e$modules$CommandDa);
-  return (0, _createClass2.default)(UserProgress, null, [{
+  (0, _createClass2.default)(UserProgress, null, [{
     key: "getEndpointFormat",
     value: function getEndpointFormat() {
       return 'checklist/user-progress';
     }
   }]);
+  return UserProgress;
 }($e.modules.CommandData);
-var _default = exports["default"] = UserProgress;
+exports.UserProgress = UserProgress;
+var _default = UserProgress;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1128,21 +1144,22 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = exports.ToggleIcon = void 0;
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _togglePopup = _interopRequireDefault(__webpack_require__(/*! ./toggle-popup */ "../modules/checklist/assets/js/commands/toggle-popup.js"));
 var _functions = __webpack_require__(/*! ../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
-function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-var ToggleIcon = exports.ToggleIcon = /*#__PURE__*/function (_$e$modules$CommandBa) {
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var ToggleIcon = /*#__PURE__*/function (_$e$modules$CommandBa) {
+  (0, _inherits2.default)(ToggleIcon, _$e$modules$CommandBa);
+  var _super = _createSuper(ToggleIcon);
   function ToggleIcon() {
     (0, _classCallCheck2.default)(this, ToggleIcon);
-    return _callSuper(this, ToggleIcon, arguments);
+    return _super.apply(this, arguments);
   }
-  (0, _inherits2.default)(ToggleIcon, _$e$modules$CommandBa);
-  return (0, _createClass2.default)(ToggleIcon, [{
+  (0, _createClass2.default)(ToggleIcon, [{
     key: "apply",
     value: function apply(shouldShow) {
       document.body.querySelector('[aria-label="Checklist"]').parentElement.style.display = shouldShow ? 'block' : 'none';
@@ -1151,9 +1168,12 @@ var ToggleIcon = exports.ToggleIcon = /*#__PURE__*/function (_$e$modules$Command
       }
     }
   }]);
+  return ToggleIcon;
 }($e.modules.CommandBase);
+exports.ToggleIcon = ToggleIcon;
 (0, _defineProperty2.default)(ToggleIcon, "isSettingsOn", true);
-var _default = exports["default"] = ToggleIcon;
+var _default = ToggleIcon;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1174,41 +1194,42 @@ exports["default"] = exports.TogglePopup = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _app = _interopRequireDefault(__webpack_require__(/*! ../app/app */ "../modules/checklist/assets/js/app/app.js"));
 var _query = __webpack_require__(/*! @elementor/query */ "../node_modules/@elementor/query/dist/index.js");
 var _client = _interopRequireDefault(__webpack_require__(/*! react-dom/client */ "../node_modules/react-dom/client.js"));
 var _functions = __webpack_require__(/*! ../utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
 var _consts = __webpack_require__(/*! ../utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
-function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 var queryClient = new _query.QueryClient();
-var TogglePopup = exports.TogglePopup = /*#__PURE__*/function (_$e$modules$CommandBa) {
+var TogglePopup = /*#__PURE__*/function (_$e$modules$CommandBa) {
+  (0, _inherits2.default)(TogglePopup, _$e$modules$CommandBa);
+  var _super = _createSuper(TogglePopup);
   function TogglePopup() {
     (0, _classCallCheck2.default)(this, TogglePopup);
-    return _callSuper(this, TogglePopup, arguments);
+    return _super.apply(this, arguments);
   }
-  (0, _inherits2.default)(TogglePopup, _$e$modules$CommandBa);
-  return (0, _createClass2.default)(TogglePopup, [{
+  (0, _createClass2.default)(TogglePopup, [{
     key: "apply",
     value: function apply(args) {
       if (!TogglePopup.isOpen) {
         this.mount();
       } else {
         this.unmount();
+        (0, _functions.updateUserProgress)((0, _defineProperty2.default)({}, _consts.USER_PROGRESS.EDITOR_VISIT_COUNT, -1));
       }
       TogglePopup.isOpen = !TogglePopup.isOpen;
       args.isOpen = TogglePopup.isOpen;
-      (0, _functions.updateUserProgress)((0, _defineProperty2.default)({}, _consts.USER_PROGRESS.LAST_OPENED_TIMESTAMP, TogglePopup.isOpen));
     }
   }, {
     key: "mount",
     value: function mount() {
       this.setRootElement();
-      TogglePopup.rootElement.render(/*#__PURE__*/_react.default.createElement(_query.QueryClientProvider, {
+      TogglePopup.rootElement.render( /*#__PURE__*/_react.default.createElement(_query.QueryClientProvider, {
         client: queryClient
       }, /*#__PURE__*/_react.default.createElement(_app.default, null)));
     }
@@ -1230,10 +1251,13 @@ var TogglePopup = exports.TogglePopup = /*#__PURE__*/function (_$e$modules$Comma
       TogglePopup.rootElement = _client.default.createRoot(root);
     }
   }]);
+  return TogglePopup;
 }($e.modules.CommandBase);
+exports.TogglePopup = TogglePopup;
 (0, _defineProperty2.default)(TogglePopup, "rootElement", null);
 (0, _defineProperty2.default)(TogglePopup, "isOpen", false);
-var _default = exports["default"] = TogglePopup;
+var _default = TogglePopup;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1254,22 +1278,23 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var commands = _interopRequireWildcard(__webpack_require__(/*! ./commands/ */ "../modules/checklist/assets/js/commands/index.js"));
 var commandsData = _interopRequireWildcard(__webpack_require__(/*! ./commands-data/ */ "../modules/checklist/assets/js/commands-data/index.js"));
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
-function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-var Component = exports["default"] = /*#__PURE__*/function (_$e$modules$Component) {
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var Component = /*#__PURE__*/function (_$e$modules$Component) {
+  (0, _inherits2.default)(Component, _$e$modules$Component);
+  var _super = _createSuper(Component);
   function Component() {
     (0, _classCallCheck2.default)(this, Component);
-    return _callSuper(this, Component, arguments);
+    return _super.apply(this, arguments);
   }
-  (0, _inherits2.default)(Component, _$e$modules$Component);
-  return (0, _createClass2.default)(Component, [{
+  (0, _createClass2.default)(Component, [{
     key: "getNamespace",
     value: function getNamespace() {
       return 'checklist';
@@ -1290,7 +1315,9 @@ var Component = exports["default"] = /*#__PURE__*/function (_$e$modules$Componen
       return 'checklist';
     }
   }]);
+  return Component;
 }($e.modules.ComponentBase);
+exports["default"] = Component;
 
 /***/ }),
 
@@ -1316,10 +1343,10 @@ var _topbarIcon = _interopRequireDefault(__webpack_require__(/*! ./topbar-icon *
 var _functions = __webpack_require__(/*! ./utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
 var _query = __webpack_require__(/*! @elementor/query */ "../node_modules/@elementor/query/dist/index.js");
 var _commands = __webpack_require__(/*! ./commands */ "../modules/checklist/assets/js/commands/index.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var queryClient = new _query.QueryClient();
-var editorV2 = exports.editorV2 = function editorV2() {
+var editorV2 = function editorV2() {
   var utilitiesMenu = EditorAppBar.utilitiesMenu;
   utilitiesMenu.registerLink({
     id: 'app-bar-menu-item-checklist',
@@ -1340,6 +1367,7 @@ var editorV2 = exports.editorV2 = function editorV2() {
     }
   });
 };
+exports.editorV2 = editorV2;
 
 /***/ }),
 
@@ -1359,8 +1387,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var React = _react;
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _query = __webpack_require__(/*! @elementor/query */ "../node_modules/@elementor/query/dist/index.js");
 var _editorV1Adapters = __webpack_require__(/*! @elementor/editor-v1-adapters */ "@elementor/editor-v1-adapters");
 var _RocketIcon = _interopRequireDefault(__webpack_require__(/*! @elementor/icons/RocketIcon */ "@elementor/icons/RocketIcon"));
@@ -1368,15 +1395,15 @@ var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
 var _reminderModal = _interopRequireDefault(__webpack_require__(/*! ./app/components/reminder-modal */ "../modules/checklist/assets/js/app/components/reminder-modal.js"));
 var _consts = __webpack_require__(/*! ./utils/consts */ "../modules/checklist/assets/js/utils/consts.js");
 var _functions = __webpack_require__(/*! ./utils/functions */ "../modules/checklist/assets/js/utils/functions.js");
-function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME = _consts.USER_PROGRESS.CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME;
 var TopBarIcon = function TopBarIcon() {
-  var _useState = (0, _react.useState)(false),
+  var _useState = (0, React.useState)(false),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
     hasRoot = _useState2[0],
     setHasRoot = _useState2[1],
-    _useState3 = (0, _react.useState)(false),
+    _useState3 = (0, React.useState)(false),
     _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
     open = _useState4[0],
     setOpen = _useState4[1],
@@ -1387,12 +1414,12 @@ var TopBarIcon = function TopBarIcon() {
     error = _useQuery.error,
     userProgress = _useQuery.data,
     closedForFirstTime = userProgress === null || userProgress === void 0 ? void 0 : userProgress[CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME];
-  (0, _react.useEffect)(function () {
+  (0, React.useEffect)(function () {
     return (0, _editorV1Adapters.__privateListenTo)((0, _editorV1Adapters.commandEndEvent)('checklist/toggle-popup'), function (e) {
       setHasRoot(e.args.isOpen);
     });
   }, [hasRoot]);
-  (0, _react.useEffect)(function () {
+  (0, React.useEffect)(function () {
     var handleFirstClosed = function handleFirstClosed() {
       setOpen(true);
     };
@@ -1421,7 +1448,8 @@ var TopBarIcon = function TopBarIcon() {
     }
   }, /*#__PURE__*/React.createElement(_RocketIcon.default, null));
 };
-var _default = exports["default"] = TopBarIcon;
+var _default = TopBarIcon;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -1438,27 +1466,31 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports.USER_PROGRESS_ROUTE = exports.USER_PROGRESS = exports.STEP_IDS_TO_COMPLETE_IN_EDITOR = exports.STEPS_ROUTE = exports.STEP = exports.PANEL_ROUTES = exports.MIXPANEL_CHECKLIST_STEPS = void 0;
-var STEPS_ROUTE = exports.STEPS_ROUTE = 'checklist/steps',
-  USER_PROGRESS_ROUTE = exports.USER_PROGRESS_ROUTE = 'checklist/user-progress';
-var STEP = exports.STEP = {
+var STEPS_ROUTE = 'checklist/steps',
+  USER_PROGRESS_ROUTE = 'checklist/user-progress';
+exports.USER_PROGRESS_ROUTE = USER_PROGRESS_ROUTE;
+exports.STEPS_ROUTE = STEPS_ROUTE;
+var STEP = {
   IS_MARKED_COMPLETED: 'is_marked_completed',
   IS_IMMUTABLE_COMPLETED: 'is_immutable_completed',
   IS_ABSOLUTE_COMPLETED: 'is_absolute_completed',
   PROMOTION_DATA: 'promotion_data'
 };
-var USER_PROGRESS = exports.USER_PROGRESS = {
-  LAST_OPENED_TIMESTAMP: 'last_opened_timestamp',
-  SHOULD_OPEN_IN_EDITOR: 'should_open_in_editor',
+exports.STEP = STEP;
+var USER_PROGRESS = {
   CHECKLIST_CLOSED_IN_THE_EDITOR_FOR_FIRST_TIME: 'first_closed_checklist_in_editor',
   IS_POPUP_MINIMIZED: 'is_popup_minimized',
-  EDITOR_VISIT_COUNT: 'e_editor_counter'
+  EDITOR_VISIT_COUNT: 'editor_visit_count'
 };
-var STEP_IDS_TO_COMPLETE_IN_EDITOR = exports.STEP_IDS_TO_COMPLETE_IN_EDITOR = ['add_logo', 'set_fonts_and_colors'];
-var PANEL_ROUTES = exports.PANEL_ROUTES = {
+exports.USER_PROGRESS = USER_PROGRESS;
+var STEP_IDS_TO_COMPLETE_IN_EDITOR = ['add_logo', 'set_fonts_and_colors'];
+exports.STEP_IDS_TO_COMPLETE_IN_EDITOR = STEP_IDS_TO_COMPLETE_IN_EDITOR;
+var PANEL_ROUTES = {
   add_logo: 'panel/global/settings-site-identity',
   set_fonts_and_colors: 'panel/global/global-typography'
 };
-var MIXPANEL_CHECKLIST_STEPS = exports.MIXPANEL_CHECKLIST_STEPS = {
+exports.PANEL_ROUTES = PANEL_ROUTES;
+var MIXPANEL_CHECKLIST_STEPS = {
   UPGRADE: 'upgrade',
   ACTION: 'action',
   DONE: 'done',
@@ -1468,6 +1500,7 @@ var MIXPANEL_CHECKLIST_STEPS = exports.MIXPANEL_CHECKLIST_STEPS = {
   CHECKLIST_HEADER_CLOSE: 'checklistHeaderClose',
   ACCORDION_SECTION: 'accordionSection'
 };
+exports.MIXPANEL_CHECKLIST_STEPS = MIXPANEL_CHECKLIST_STEPS;
 
 /***/ }),
 
@@ -1487,7 +1520,6 @@ Object.defineProperty(exports, "__esModule", ({
 exports.addMixpanelTrackingChecklistHeader = addMixpanelTrackingChecklistHeader;
 exports.addMixpanelTrackingChecklistSteps = addMixpanelTrackingChecklistSteps;
 exports.addMixpanelTrackingChecklistTopBar = addMixpanelTrackingChecklistTopBar;
-exports.dispatchChecklistOpenEvent = dispatchChecklistOpenEvent;
 exports.fetchSteps = fetchSteps;
 exports.fetchUserProgress = fetchUserProgress;
 exports.getAndUpdateStep = getAndUpdateStep;
@@ -1500,8 +1532,8 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
 var _consts = __webpack_require__(/*! ./consts */ "../modules/checklist/assets/js/utils/consts.js");
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var IS_MARKED_COMPLETED = _consts.STEP.IS_MARKED_COMPLETED,
   IS_ABSOLUTE_COMPLETED = _consts.STEP.IS_ABSOLUTE_COMPLETED,
   IS_IMMUTABLE_COMPLETED = _consts.STEP.IS_IMMUTABLE_COMPLETED,
@@ -1516,7 +1548,7 @@ function fetchSteps() {
   return _fetchSteps.apply(this, arguments);
 }
 function _fetchSteps() {
-  _fetchSteps = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+  _fetchSteps = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
     var _response$data;
     var response;
     return _regenerator.default.wrap(function _callee$(_context) {
@@ -1528,7 +1560,7 @@ function _fetchSteps() {
           });
         case 2:
           response = _context.sent;
-          return _context.abrupt("return", (response === null || response === void 0 || (_response$data = response.data) === null || _response$data === void 0 ? void 0 : _response$data.data) || null);
+          return _context.abrupt("return", (response === null || response === void 0 ? void 0 : (_response$data = response.data) === null || _response$data === void 0 ? void 0 : _response$data.data) || null);
         case 4:
         case "end":
           return _context.stop();
@@ -1541,7 +1573,7 @@ function fetchUserProgress() {
   return _fetchUserProgress.apply(this, arguments);
 }
 function _fetchUserProgress() {
-  _fetchUserProgress = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee2() {
+  _fetchUserProgress = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee2() {
     var _response$data2;
     var response;
     return _regenerator.default.wrap(function _callee2$(_context2) {
@@ -1553,7 +1585,7 @@ function _fetchUserProgress() {
           });
         case 2:
           response = _context2.sent;
-          return _context2.abrupt("return", (response === null || response === void 0 || (_response$data2 = response.data) === null || _response$data2 === void 0 ? void 0 : _response$data2.data) || null);
+          return _context2.abrupt("return", (response === null || response === void 0 ? void 0 : (_response$data2 = response.data) === null || _response$data2 === void 0 ? void 0 : _response$data2.data) || null);
         case 4:
         case "end":
           return _context2.stop();
@@ -1566,7 +1598,7 @@ function updateStep(_x, _x2) {
   return _updateStep.apply(this, arguments);
 }
 function _updateStep() {
-  _updateStep = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee3(id, data) {
+  _updateStep = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee3(id, data) {
     return _regenerator.default.wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
@@ -1590,7 +1622,7 @@ function updateUserProgress(_x3) {
   return _updateUserProgress.apply(this, arguments);
 }
 function _updateUserProgress() {
-  _updateUserProgress = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee4(data) {
+  _updateUserProgress = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee4(data) {
     return _regenerator.default.wrap(function _callee4$(_context4) {
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
@@ -1626,7 +1658,7 @@ function addMixpanelTrackingChecklistSteps(name, action) {
 }
 function addMixpanelTrackingChecklistHeader(name) {
   var documentMetaData = getDocumentMetaDataMixpanel();
-  return elementor.editorEvents.dispatchEvent(elementor.editorEvents.config.names.elementorEditor.checklist[name], _objectSpread({
+  return elementor.editorEvents.dispatchEvent(elementor.editorEvents.config.names.elementorEditor[name], _objectSpread({
     location: elementor.editorEvents.config.locations.elementorEditor,
     secondaryLocation: elementor.editorEvents.config.secondaryLocations.checklistHeader,
     trigger: elementor.editorEvents.config.triggers.click,
@@ -1641,15 +1673,6 @@ function addMixpanelTrackingChecklistTopBar(togglePopupState) {
     secondaryLocation: elementor.editorEvents.config.secondaryLocations.launchpad,
     trigger: elementor.editorEvents.config.triggers.toggleClick,
     element: elementor.editorEvents.config.elements.buttonIcon
-  }, documentMetaData));
-}
-function dispatchChecklistOpenEvent() {
-  var documentMetaData = getDocumentMetaDataMixpanel();
-  return elementor.editorEvents.dispatchEvent(elementor.editorEvents.config.names.elementorEditor.checklist.checklistFirstPopup, _objectSpread({
-    location: elementor.editorEvents.config.locations.elementorEditor,
-    secondaryLocation: elementor.editorEvents.config.secondaryLocations.launchpad,
-    trigger: elementor.editorEvents.config.triggers.editorLoaded,
-    element: elementor.editorEvents.config.elements.launchpadChecklist
   }, documentMetaData));
 }
 function getDocumentMetaDataMixpanel() {
@@ -4257,10 +4280,10 @@ module.exports = wp.i18n;
   \******************************************************************/
 /***/ ((module) => {
 
-function _arrayLikeToArray(r, a) {
-  (null == a || a > r.length) && (a = r.length);
-  for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
-  return n;
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+  return arr2;
 }
 module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4272,8 +4295,8 @@ module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exp
   \****************************************************************/
 /***/ ((module) => {
 
-function _arrayWithHoles(r) {
-  if (Array.isArray(r)) return r;
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
 }
 module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4286,8 +4309,8 @@ module.exports = _arrayWithHoles, module.exports.__esModule = true, module.expor
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "../node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-function _arrayWithoutHoles(r) {
-  if (Array.isArray(r)) return arrayLikeToArray(r);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
 module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4299,9 +4322,11 @@ module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.ex
   \***********************************************************************/
 /***/ ((module) => {
 
-function _assertThisInitialized(e) {
-  if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  return e;
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+  return self;
 }
 module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4313,28 +4338,33 @@ module.exports = _assertThisInitialized, module.exports.__esModule = true, modul
   \******************************************************************/
 /***/ ((module) => {
 
-function asyncGeneratorStep(n, t, e, r, o, a, c) {
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
   try {
-    var i = n[a](c),
-      u = i.value;
-  } catch (n) {
-    return void e(n);
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
   }
-  i.done ? t(u) : Promise.resolve(u).then(r, o);
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
 }
-function _asyncToGenerator(n) {
+function _asyncToGenerator(fn) {
   return function () {
-    var t = this,
-      e = arguments;
-    return new Promise(function (r, o) {
-      var a = n.apply(t, e);
-      function _next(n) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "next", n);
+    var self = this,
+      args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
       }
-      function _throw(n) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "throw", n);
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
       }
-      _next(void 0);
+      _next(undefined);
     });
   };
 }
@@ -4348,8 +4378,10 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
   \****************************************************************/
 /***/ ((module) => {
 
-function _classCallCheck(a, n) {
-  if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
 }
 module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4362,16 +4394,22 @@ module.exports = _classCallCheck, module.exports.__esModule = true, module.expor
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ "../node_modules/@babel/runtime/helpers/toPropertyKey.js");
-function _defineProperties(e, r) {
-  for (var t = 0; t < r.length; t++) {
-    var o = r[t];
-    o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, toPropertyKey(o.key), o);
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, toPropertyKey(descriptor.key), descriptor);
   }
 }
-function _createClass(e, r, t) {
-  return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", {
-    writable: !1
-  }), e;
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  Object.defineProperty(Constructor, "prototype", {
+    writable: false
+  });
+  return Constructor;
 }
 module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4384,13 +4422,19 @@ module.exports = _createClass, module.exports.__esModule = true, module.exports[
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ "../node_modules/@babel/runtime/helpers/toPropertyKey.js");
-function _defineProperty(e, r, t) {
-  return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
-    value: t,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[r] = t, e;
+function _defineProperty(obj, key, value) {
+  key = toPropertyKey(key);
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+  return obj;
 }
 module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4402,10 +4446,11 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
   \****************************************************************/
 /***/ ((module) => {
 
-function _getPrototypeOf(t) {
-  return module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) {
-    return t.__proto__ || Object.getPrototypeOf(t);
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports, _getPrototypeOf(t);
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _getPrototypeOf(o);
 }
 module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4418,17 +4463,21 @@ module.exports = _getPrototypeOf, module.exports.__esModule = true, module.expor
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ "../node_modules/@babel/runtime/helpers/setPrototypeOf.js");
-function _inherits(t, e) {
-  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
-  t.prototype = Object.create(e && e.prototype, {
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
     constructor: {
-      value: t,
-      writable: !0,
-      configurable: !0
+      value: subClass,
+      writable: true,
+      configurable: true
     }
-  }), Object.defineProperty(t, "prototype", {
-    writable: !1
-  }), e && setPrototypeOf(t, e);
+  });
+  Object.defineProperty(subClass, "prototype", {
+    writable: false
+  });
+  if (superClass) setPrototypeOf(subClass, superClass);
 }
 module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4440,9 +4489,9 @@ module.exports = _inherits, module.exports.__esModule = true, module.exports["de
   \***********************************************************************/
 /***/ ((module) => {
 
-function _interopRequireDefault(e) {
-  return e && e.__esModule ? e : {
-    "default": e
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
   };
 }
 module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
@@ -4455,8 +4504,8 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
   \*****************************************************************/
 /***/ ((module) => {
 
-function _iterableToArray(r) {
-  if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r);
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4533,10 +4582,13 @@ module.exports = _nonIterableSpread, module.exports.__esModule = true, module.ex
 
 var _typeof = (__webpack_require__(/*! ./typeof.js */ "../node_modules/@babel/runtime/helpers/typeof.js")["default"]);
 var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ "../node_modules/@babel/runtime/helpers/assertThisInitialized.js");
-function _possibleConstructorReturn(t, e) {
-  if (e && ("object" == _typeof(e) || "function" == typeof e)) return e;
-  if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-  return assertThisInitialized(t);
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
+  }
+  return assertThisInitialized(self);
 }
 module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4658,7 +4710,7 @@ function _regeneratorRuntime() {
   function makeInvokeMethod(e, r, n) {
     var o = h;
     return function (i, a) {
-      if (o === f) throw Error("Generator is already running");
+      if (o === f) throw new Error("Generator is already running");
       if (o === s) {
         if ("throw" === i) throw a;
         return {
@@ -4800,7 +4852,7 @@ function _regeneratorRuntime() {
           } else if (c) {
             if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
           } else {
-            if (!u) throw Error("try statement without catch or finally");
+            if (!u) throw new Error("try statement without catch or finally");
             if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
           }
         }
@@ -4840,7 +4892,7 @@ function _regeneratorRuntime() {
           return o;
         }
       }
-      throw Error("illegal catch attempt");
+      throw new Error("illegal catch attempt");
     },
     delegateYield: function delegateYield(e, r, n) {
       return this.delegate = {
@@ -4861,10 +4913,12 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
   \****************************************************************/
 /***/ ((module) => {
 
-function _setPrototypeOf(t, e) {
-  return module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
-    return t.__proto__ = e, t;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports, _setPrototypeOf(t, e);
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
 }
 module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4880,8 +4934,8 @@ var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ "../node_mod
 var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ "../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js");
 var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
 var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ "../node_modules/@babel/runtime/helpers/nonIterableRest.js");
-function _slicedToArray(r, e) {
-  return arrayWithHoles(r) || iterableToArrayLimit(r, e) || unsupportedIterableToArray(r, e) || nonIterableRest();
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
 }
 module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4897,8 +4951,8 @@ var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ "../no
 var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ "../node_modules/@babel/runtime/helpers/iterableToArray.js");
 var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
 var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ "../node_modules/@babel/runtime/helpers/nonIterableSpread.js");
-function _toConsumableArray(r) {
-  return arrayWithoutHoles(r) || iterableToArray(r) || unsupportedIterableToArray(r) || nonIterableSpread();
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
 }
 module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4935,7 +4989,7 @@ var _typeof = (__webpack_require__(/*! ./typeof.js */ "../node_modules/@babel/ru
 var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ "../node_modules/@babel/runtime/helpers/toPrimitive.js");
 function toPropertyKey(t) {
   var i = toPrimitive(t, "string");
-  return "symbol" == _typeof(i) ? i : i + "";
+  return "symbol" == _typeof(i) ? i : String(i);
 }
 module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4950,11 +5004,11 @@ module.exports = toPropertyKey, module.exports.__esModule = true, module.exports
 function _typeof(o) {
   "@babel/helpers - typeof";
 
-  return module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
     return typeof o;
   } : function (o) {
     return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports, _typeof(o);
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
 }
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -4967,12 +5021,13 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "../node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-function _unsupportedIterableToArray(r, a) {
-  if (r) {
-    if ("string" == typeof r) return arrayLikeToArray(r, a);
-    var t = {}.toString.call(r).slice(8, -1);
-    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? arrayLikeToArray(r, a) : void 0;
-  }
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
 }
 module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
@@ -5285,7 +5340,6 @@ var src_exports = {};
 __export(src_exports, {
   CancelledError: () => import_retryer.CancelledError,
   InfiniteQueryObserver: () => import_infiniteQueryObserver.InfiniteQueryObserver,
-  Mutation: () => import_mutation.Mutation,
   MutationCache: () => import_mutationCache.MutationCache,
   MutationObserver: () => import_mutationObserver.MutationObserver,
   QueriesObserver: () => import_queriesObserver.QueriesObserver,
@@ -5326,7 +5380,6 @@ var import_retryer2 = __webpack_require__(/*! ./retryer.cjs */ "../node_modules/
 var import_hydration = __webpack_require__(/*! ./hydration.cjs */ "../node_modules/@tanstack/query-core/build/modern/hydration.cjs");
 __reExport(src_exports, __webpack_require__(/*! ./types.cjs */ "../node_modules/@tanstack/query-core/build/modern/types.cjs"), module.exports);
 var import_query = __webpack_require__(/*! ./query.cjs */ "../node_modules/@tanstack/query-core/build/modern/query.cjs");
-var import_mutation = __webpack_require__(/*! ./mutation.cjs */ "../node_modules/@tanstack/query-core/build/modern/mutation.cjs");
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=index.cjs.map
@@ -5371,13 +5424,12 @@ var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tans
 function infiniteQueryBehavior(pages) {
   return {
     onFetch: (context, query) => {
-      const options = context.options;
-      const direction = context.fetchOptions?.meta?.fetchMore?.direction;
-      const oldPages = context.state.data?.pages || [];
-      const oldPageParams = context.state.data?.pageParams || [];
-      let result = { pages: [], pageParams: [] };
-      let currentPage = 0;
       const fetchFn = async () => {
+        const options = context.options;
+        const direction = context.fetchOptions?.meta?.fetchMore?.direction;
+        const oldPages = context.state.data?.pages || [];
+        const oldPageParams = context.state.data?.pageParams || [];
+        const empty = { pages: [], pageParams: [] };
         let cancelled = false;
         const addSignalProperty = (object) => {
           Object.defineProperty(object, "signal", {
@@ -5419,6 +5471,7 @@ function infiniteQueryBehavior(pages) {
             pageParams: addTo(data.pageParams, param, maxPages)
           };
         };
+        let result;
         if (direction && oldPages.length) {
           const previous = direction === "backward";
           const pageParamFn = previous ? getPreviousPageParam : getNextPageParam;
@@ -5429,15 +5482,15 @@ function infiniteQueryBehavior(pages) {
           const param = pageParamFn(options, oldData);
           result = await fetchPage(oldData, param, previous);
         } else {
+          result = await fetchPage(
+            empty,
+            oldPageParams[0] ?? options.initialPageParam
+          );
           const remainingPages = pages ?? oldPages.length;
-          do {
-            const param = currentPage === 0 ? oldPageParams[0] ?? options.initialPageParam : getNextPageParam(options, result);
-            if (currentPage > 0 && param == null) {
-              break;
-            }
+          for (let i = 1; i < remainingPages; i++) {
+            const param = getNextPageParam(options, result);
             result = await fetchPage(result, param);
-            currentPage++;
-          } while (currentPage < remainingPages);
+          }
         }
         return result;
       };
@@ -5461,15 +5514,20 @@ function infiniteQueryBehavior(pages) {
 }
 function getNextPageParam(options, { pages, pageParams }) {
   const lastIndex = pages.length - 1;
-  return pages.length > 0 ? options.getNextPageParam(
+  return options.getNextPageParam(
     pages[lastIndex],
     pages,
     pageParams[lastIndex],
     pageParams
-  ) : void 0;
+  );
 }
 function getPreviousPageParam(options, { pages, pageParams }) {
-  return pages.length > 0 ? options.getPreviousPageParam?.(pages[0], pages, pageParams[0], pageParams) : void 0;
+  return options.getPreviousPageParam?.(
+    pages[0],
+    pages,
+    pageParams[0],
+    pageParams
+  );
 }
 function hasNextPage(options, data) {
   if (!data)
@@ -6164,6 +6222,22 @@ function createNotifyManager() {
     callback();
   };
   let scheduleFn = (cb) => setTimeout(cb, 0);
+  const setScheduler = (fn) => {
+    scheduleFn = fn;
+  };
+  const batch = (callback) => {
+    let result;
+    transactions++;
+    try {
+      result = callback();
+    } finally {
+      transactions--;
+      if (!transactions) {
+        flush();
+      }
+    }
+    return result;
+  };
   const schedule = (callback) => {
     if (transactions) {
       queue.push(callback);
@@ -6172,6 +6246,13 @@ function createNotifyManager() {
         notifyFn(callback);
       });
     }
+  };
+  const batchCalls = (callback) => {
+    return (...args) => {
+      schedule(() => {
+        callback(...args);
+      });
+    };
   };
   const flush = () => {
     const originalQueue = queue;
@@ -6186,48 +6267,19 @@ function createNotifyManager() {
       });
     }
   };
+  const setNotifyFunction = (fn) => {
+    notifyFn = fn;
+  };
+  const setBatchNotifyFunction = (fn) => {
+    batchNotifyFn = fn;
+  };
   return {
-    batch: (callback) => {
-      let result;
-      transactions++;
-      try {
-        result = callback();
-      } finally {
-        transactions--;
-        if (!transactions) {
-          flush();
-        }
-      }
-      return result;
-    },
-    /**
-     * All calls to the wrapped function will be batched.
-     */
-    batchCalls: (callback) => {
-      return (...args) => {
-        schedule(() => {
-          callback(...args);
-        });
-      };
-    },
+    batch,
+    batchCalls,
     schedule,
-    /**
-     * Use this method to set a custom notify function.
-     * This can be used to for example wrap notifications with `React.act` while running tests.
-     */
-    setNotifyFunction: (fn) => {
-      notifyFn = fn;
-    },
-    /**
-     * Use this method to set a custom function to batch notifications together into a single tick.
-     * By default React Query will use the batch function provided by ReactDOM or React Native.
-     */
-    setBatchNotifyFunction: (fn) => {
-      batchNotifyFn = fn;
-    },
-    setScheduler: (fn) => {
-      scheduleFn = fn;
-    }
+    setNotifyFunction,
+    setBatchNotifyFunction,
+    setScheduler
   };
 }
 var notifyManager = createNotifyManager();
@@ -6376,15 +6428,13 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
   #client;
   #result;
   #queries;
-  #options;
   #observers;
   #combinedResult;
   #lastCombine;
   #lastResult;
-  constructor(client, queries, options) {
+  constructor(client, queries, _options) {
     super();
     this.#client = client;
-    this.#options = options;
     this.#queries = [];
     this.#observers = [];
     this.#result = [];
@@ -6410,17 +6460,8 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
       observer.destroy();
     });
   }
-  setQueries(queries, options, notifyOptions) {
+  setQueries(queries, _options, notifyOptions) {
     this.#queries = queries;
-    this.#options = options;
-    if (true) {
-      const queryHashes = queries.map((query) => query.queryHash);
-      if (new Set(queryHashes).size !== queryHashes.length) {
-        console.warn(
-          "[QueriesObserver]: Duplicate Queries found. This might result in unexpected behavior."
-        );
-      }
-    }
     import_notifyManager.notifyManager.batch(() => {
       const prevObservers = this.#observers;
       const newObserverMatches = this.#findMatchingObservers(this.#queries);
@@ -6473,20 +6514,16 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
         return this.#combineResult(r ?? result, combine);
       },
       () => {
-        return this.#trackResult(result, queries);
+        return matches.map((match, index) => {
+          const observerResult = result[index];
+          return !match.defaultedQueryOptions.notifyOnChangeProps ? match.observer.trackResult(observerResult, (accessedProp) => {
+            matches.forEach((m) => {
+              m.observer.trackProp(accessedProp);
+            });
+          }) : observerResult;
+        });
       }
     ];
-  }
-  #trackResult(result, queries) {
-    const matches = this.#findMatchingObservers(queries);
-    return matches.map((match, index) => {
-      const observerResult = result[index];
-      return !match.defaultedQueryOptions.notifyOnChangeProps ? match.observer.trackResult(observerResult, (accessedProp) => {
-        matches.forEach((m) => {
-          m.observer.trackProp(accessedProp);
-        });
-      }) : observerResult;
-    });
   }
   #combineResult(input, combine) {
     if (combine) {
@@ -6503,26 +6540,41 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
     return input;
   }
   #findMatchingObservers(queries) {
+    const prevObservers = this.#observers;
     const prevObserversMap = new Map(
-      this.#observers.map((observer) => [observer.options.queryHash, observer])
+      prevObservers.map((observer) => [observer.options.queryHash, observer])
     );
-    const observers = [];
-    queries.forEach((options) => {
-      const defaultedOptions = this.#client.defaultQueryOptions(options);
+    const defaultedQueryOptions = queries.map(
+      (options) => this.#client.defaultQueryOptions(options)
+    );
+    const matchingObservers = defaultedQueryOptions.flatMap((defaultedOptions) => {
       const match = prevObserversMap.get(defaultedOptions.queryHash);
-      if (match) {
-        observers.push({
-          defaultedQueryOptions: defaultedOptions,
-          observer: match
-        });
-      } else {
-        observers.push({
-          defaultedQueryOptions: defaultedOptions,
-          observer: new import_queryObserver.QueryObserver(this.#client, defaultedOptions)
-        });
+      if (match != null) {
+        return [{ defaultedQueryOptions: defaultedOptions, observer: match }];
       }
+      return [];
     });
-    return observers;
+    const matchedQueryHashes = new Set(
+      matchingObservers.map((match) => match.defaultedQueryOptions.queryHash)
+    );
+    const unmatchedQueries = defaultedQueryOptions.filter(
+      (defaultedOptions) => !matchedQueryHashes.has(defaultedOptions.queryHash)
+    );
+    const getObserver = (options) => {
+      const defaultedOptions = this.#client.defaultQueryOptions(options);
+      const currentObserver = this.#observers.find(
+        (o) => o.options.queryHash === defaultedOptions.queryHash
+      );
+      return currentObserver ?? new import_queryObserver.QueryObserver(this.#client, defaultedOptions);
+    };
+    const newOrReusedObservers = unmatchedQueries.map((options) => {
+      return {
+        defaultedQueryOptions: options,
+        observer: getObserver(options)
+      };
+    });
+    const sortMatchesByOrderOfQueries = (a, b) => defaultedQueryOptions.indexOf(a.defaultedQueryOptions) - defaultedQueryOptions.indexOf(b.defaultedQueryOptions);
+    return matchingObservers.concat(newOrReusedObservers).sort(sortMatchesByOrderOfQueries);
   }
   #onUpdate(observer, result) {
     const index = this.#observers.indexOf(observer);
@@ -6532,20 +6584,11 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
     }
   }
   #notify() {
-    if (this.hasListeners()) {
-      const previousResult = this.#combinedResult;
-      const newResult = this.#combineResult(
-        this.#trackResult(this.#result, this.#queries),
-        this.#options?.combine
-      );
-      if (previousResult !== newResult) {
-        import_notifyManager.notifyManager.batch(() => {
-          this.listeners.forEach((listener) => {
-            listener(this.#result);
-          });
-        });
-      }
-    }
+    import_notifyManager.notifyManager.batch(() => {
+      this.listeners.forEach((listener) => {
+        listener(this.#result);
+      });
+    });
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
@@ -6607,8 +6650,8 @@ var Query = class extends import_removable.Removable {
     this.#cache = config.cache;
     this.queryKey = config.queryKey;
     this.queryHash = config.queryHash;
-    this.#initialState = getDefaultState(this.options);
-    this.state = config.state ?? this.#initialState;
+    this.#initialState = config.state || getDefaultState(this.options);
+    this.state = this.#initialState;
     this.scheduleGc();
   }
   get meta() {
@@ -6658,10 +6701,7 @@ var Query = class extends import_removable.Removable {
     );
   }
   isDisabled() {
-    if (this.getObserversCount() > 0) {
-      return !this.isActive();
-    }
-    return this.options.queryFn === import_utils.skipToken || this.state.dataUpdateCount + this.state.errorUpdateCount === 0;
+    return this.getObserversCount() > 0 && !this.isActive();
   }
   isStale() {
     if (this.state.isInvalidated) {
@@ -6804,7 +6844,10 @@ var Query = class extends import_removable.Removable {
           this
         );
       }
-      this.scheduleGc();
+      if (!this.isFetchingOptimistic) {
+        this.scheduleGc();
+      }
+      this.isFetchingOptimistic = false;
     };
     this.#retryer = (0, import_retryer.createRetryer)({
       initialPromise: fetchOptions?.initialPromise,
@@ -6820,19 +6863,17 @@ var Query = class extends import_removable.Removable {
           onError(new Error(`${this.queryHash} data is undefined`));
           return;
         }
-        try {
-          this.setData(data);
-        } catch (error) {
-          onError(error);
-          return;
-        }
+        this.setData(data);
         this.#cache.config.onSuccess?.(data, this);
         this.#cache.config.onSettled?.(
           data,
           this.state.error,
           this
         );
-        this.scheduleGc();
+        if (!this.isFetchingOptimistic) {
+          this.scheduleGc();
+        }
+        this.isFetchingOptimistic = false;
       },
       onError,
       onFail: (failureCount, error) => {
@@ -7186,16 +7227,17 @@ var QueryClient = class {
     return this.#queryCache.get(options.queryHash)?.state.data;
   }
   ensureQueryData(options) {
-    const defaultedOptions = this.defaultQueryOptions(options);
-    const query = this.#queryCache.build(this, defaultedOptions);
-    const cachedData = query.state.data;
-    if (cachedData === void 0) {
+    const cachedData = this.getQueryData(options.queryKey);
+    if (cachedData === void 0)
       return this.fetchQuery(options);
+    else {
+      const defaultedOptions = this.defaultQueryOptions(options);
+      const query = this.#queryCache.build(this, defaultedOptions);
+      if (options.revalidateIfStale && query.isStaleByTime((0, import_utils.resolveStaleTime)(defaultedOptions.staleTime, query))) {
+        void this.prefetchQuery(defaultedOptions);
+      }
+      return Promise.resolve(cachedData);
     }
-    if (options.revalidateIfStale && query.isStaleByTime((0, import_utils.resolveStaleTime)(defaultedOptions.staleTime, query))) {
-      void this.prefetchQuery(defaultedOptions);
-    }
-    return Promise.resolve(cachedData);
   }
   getQueriesData(filters) {
     return this.#queryCache.findAll(filters).map(({ queryKey, state }) => {
@@ -7225,9 +7267,7 @@ var QueryClient = class {
   }
   getQueryState(queryKey) {
     const options = this.defaultQueryOptions({ queryKey });
-    return this.#queryCache.get(
-      options.queryHash
-    )?.state;
+    return this.#queryCache.get(options.queryHash)?.state;
   }
   removeQueries(filters) {
     const queryCache = this.#queryCache;
@@ -7250,32 +7290,32 @@ var QueryClient = class {
       return this.refetchQueries(refetchFilters, options);
     });
   }
-  cancelQueries(filters, cancelOptions = {}) {
+  cancelQueries(filters = {}, cancelOptions = {}) {
     const defaultedCancelOptions = { revert: true, ...cancelOptions };
     const promises = import_notifyManager.notifyManager.batch(
       () => this.#queryCache.findAll(filters).map((query) => query.cancel(defaultedCancelOptions))
     );
     return Promise.all(promises).then(import_utils.noop).catch(import_utils.noop);
   }
-  invalidateQueries(filters, options = {}) {
+  invalidateQueries(filters = {}, options = {}) {
     return import_notifyManager.notifyManager.batch(() => {
       this.#queryCache.findAll(filters).forEach((query) => {
         query.invalidate();
       });
-      if (filters?.refetchType === "none") {
+      if (filters.refetchType === "none") {
         return Promise.resolve();
       }
       const refetchFilters = {
         ...filters,
-        type: filters?.refetchType ?? filters?.type ?? "active"
+        type: filters.refetchType ?? filters.type ?? "active"
       };
       return this.refetchQueries(refetchFilters, options);
     });
   }
-  refetchQueries(filters, options = {}) {
+  refetchQueries(filters = {}, options) {
     const fetchOptions = {
       ...options,
-      cancelRefetch: options.cancelRefetch ?? true
+      cancelRefetch: options?.cancelRefetch ?? true
     };
     const promises = import_notifyManager.notifyManager.batch(
       () => this.#queryCache.findAll(filters).filter((query) => !query.isDisabled()).map((query) => {
@@ -7308,10 +7348,6 @@ var QueryClient = class {
   prefetchInfiniteQuery(options) {
     return this.fetchInfiniteQuery(options).then(import_utils.noop).catch(import_utils.noop);
   }
-  ensureInfiniteQueryData(options) {
-    options.behavior = (0, import_infiniteQueryBehavior.infiniteQueryBehavior)(options.pages);
-    return this.ensureQueryData(options);
-  }
   resumePausedMutations() {
     if (import_onlineManager.onlineManager.isOnline()) {
       return this.#mutationCache.resumePausedMutations();
@@ -7338,10 +7374,10 @@ var QueryClient = class {
   }
   getQueryDefaults(queryKey) {
     const defaults = [...this.#queryDefaults.values()];
-    const result = {};
+    let result = {};
     defaults.forEach((queryDefault) => {
       if ((0, import_utils.partialMatchKey)(queryKey, queryDefault.queryKey)) {
-        Object.assign(result, queryDefault.defaultOptions);
+        result = { ...result, ...queryDefault.defaultOptions };
       }
     });
     return result;
@@ -7387,7 +7423,7 @@ var QueryClient = class {
     if (!defaultedOptions.networkMode && defaultedOptions.persister) {
       defaultedOptions.networkMode = "offlineFirst";
     }
-    if (defaultedOptions.queryFn === import_utils.skipToken) {
+    if (defaultedOptions.enabled !== true && defaultedOptions.queryFn === import_utils.skipToken) {
       defaultedOptions.enabled = false;
     }
     return defaultedOptions;
@@ -7446,24 +7482,17 @@ __export(queryObserver_exports, {
   QueryObserver: () => QueryObserver
 });
 module.exports = __toCommonJS(queryObserver_exports);
-var import_focusManager = __webpack_require__(/*! ./focusManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/focusManager.cjs");
-var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/notifyManager.cjs");
-var import_query = __webpack_require__(/*! ./query.cjs */ "../node_modules/@tanstack/query-core/build/modern/query.cjs");
-var import_subscribable = __webpack_require__(/*! ./subscribable.cjs */ "../node_modules/@tanstack/query-core/build/modern/subscribable.cjs");
-var import_thenable = __webpack_require__(/*! ./thenable.cjs */ "../node_modules/@tanstack/query-core/build/modern/thenable.cjs");
 var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/query-core/build/modern/utils.cjs");
+var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/notifyManager.cjs");
+var import_focusManager = __webpack_require__(/*! ./focusManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/focusManager.cjs");
+var import_subscribable = __webpack_require__(/*! ./subscribable.cjs */ "../node_modules/@tanstack/query-core/build/modern/subscribable.cjs");
+var import_query = __webpack_require__(/*! ./query.cjs */ "../node_modules/@tanstack/query-core/build/modern/query.cjs");
 var QueryObserver = class extends import_subscribable.Subscribable {
   constructor(client, options) {
     super();
     this.options = options;
     this.#client = client;
     this.#selectError = null;
-    this.#currentThenable = (0, import_thenable.pendingThenable)();
-    if (!this.options.experimental_prefetchInRender) {
-      this.#currentThenable.reject(
-        new Error("experimental_prefetchInRender feature flag is not enabled")
-      );
-    }
     this.bindMethods();
     this.setOptions(options);
   }
@@ -7473,7 +7502,6 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   #currentResult = void 0;
   #currentResultState;
   #currentResultOptions;
-  #currentThenable;
   #selectError;
   #selectFn;
   #selectResult;
@@ -7601,6 +7629,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   fetchOptimistic(options) {
     const defaultedOptions = this.#client.defaultQueryOptions(options);
     const query = this.#client.getQueryCache().build(this.#client, defaultedOptions);
+    query.isFetchingOptimistic = true;
     return query.fetch().then(() => this.createResult(query, defaultedOptions));
   }
   fetch(fetchOptions) {
@@ -7778,42 +7807,9 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       isPlaceholderData,
       isRefetchError: isError && hasData,
       isStale: isStale(query, options),
-      refetch: this.refetch,
-      promise: this.#currentThenable
+      refetch: this.refetch
     };
-    const nextResult = result;
-    if (this.options.experimental_prefetchInRender) {
-      const finalizeThenableIfPossible = (thenable) => {
-        if (nextResult.status === "error") {
-          thenable.reject(nextResult.error);
-        } else if (nextResult.data !== void 0) {
-          thenable.resolve(nextResult.data);
-        }
-      };
-      const recreateThenable = () => {
-        const pending = this.#currentThenable = nextResult.promise = (0, import_thenable.pendingThenable)();
-        finalizeThenableIfPossible(pending);
-      };
-      const prevThenable = this.#currentThenable;
-      switch (prevThenable.status) {
-        case "pending":
-          if (query.queryHash === prevQuery.queryHash) {
-            finalizeThenableIfPossible(prevThenable);
-          }
-          break;
-        case "fulfilled":
-          if (nextResult.status === "error" || nextResult.data !== prevThenable.value) {
-            recreateThenable();
-          }
-          break;
-        case "rejected":
-          if (nextResult.status !== "error" || nextResult.error !== prevThenable.reason) {
-            recreateThenable();
-          }
-          break;
-      }
-    }
-    return nextResult;
+    return result;
   }
   updateResult(notifyOptions) {
     const prevResult = this.#currentResult;
@@ -8020,7 +8016,6 @@ __export(retryer_exports, {
 module.exports = __toCommonJS(retryer_exports);
 var import_focusManager = __webpack_require__(/*! ./focusManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/focusManager.cjs");
 var import_onlineManager = __webpack_require__(/*! ./onlineManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/onlineManager.cjs");
-var import_thenable = __webpack_require__(/*! ./thenable.cjs */ "../node_modules/@tanstack/query-core/build/modern/thenable.cjs");
 var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/query-core/build/modern/utils.cjs");
 function defaultRetryDelay(failureCount) {
   return Math.min(1e3 * 2 ** failureCount, 3e4);
@@ -8028,9 +8023,8 @@ function defaultRetryDelay(failureCount) {
 function canFetch(networkMode) {
   return (networkMode ?? "online") === "online" ? import_onlineManager.onlineManager.isOnline() : true;
 }
-var CancelledError = class extends Error {
+var CancelledError = class {
   constructor(options) {
-    super("CancelledError");
     this.revert = options?.revert;
     this.silent = options?.silent;
   }
@@ -8043,7 +8037,12 @@ function createRetryer(config) {
   let failureCount = 0;
   let isResolved = false;
   let continueFn;
-  const thenable = (0, import_thenable.pendingThenable)();
+  let promiseResolve;
+  let promiseReject;
+  const promise = new Promise((outerResolve, outerReject) => {
+    promiseResolve = outerResolve;
+    promiseReject = outerReject;
+  });
   const cancel = (cancelOptions) => {
     if (!isResolved) {
       reject(new CancelledError(cancelOptions));
@@ -8063,7 +8062,7 @@ function createRetryer(config) {
       isResolved = true;
       config.onSuccess?.(value);
       continueFn?.();
-      thenable.resolve(value);
+      promiseResolve(value);
     }
   };
   const reject = (value) => {
@@ -8071,7 +8070,7 @@ function createRetryer(config) {
       isResolved = true;
       config.onError?.(value);
       continueFn?.();
-      thenable.reject(value);
+      promiseReject(value);
     }
   };
   const pause = () => {
@@ -8126,11 +8125,11 @@ function createRetryer(config) {
     });
   };
   return {
-    promise: thenable,
+    promise,
     cancel,
     continue: () => {
       continueFn?.();
-      return thenable;
+      return promise;
     },
     cancelRetry,
     continueRetry,
@@ -8141,7 +8140,7 @@ function createRetryer(config) {
       } else {
         pause().then(run);
       }
-      return thenable;
+      return promise;
     }
   };
 }
@@ -8207,75 +8206,6 @@ var Subscribable = class {
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=subscribable.cjs.map
-
-/***/ }),
-
-/***/ "../node_modules/@tanstack/query-core/build/modern/thenable.cjs":
-/*!**********************************************************************!*\
-  !*** ../node_modules/@tanstack/query-core/build/modern/thenable.cjs ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// src/thenable.ts
-var thenable_exports = {};
-__export(thenable_exports, {
-  pendingThenable: () => pendingThenable
-});
-module.exports = __toCommonJS(thenable_exports);
-function pendingThenable() {
-  let resolve;
-  let reject;
-  const thenable = new Promise((_resolve, _reject) => {
-    resolve = _resolve;
-    reject = _reject;
-  });
-  thenable.status = "pending";
-  thenable.catch(() => {
-  });
-  function finalize(data) {
-    Object.assign(thenable, data);
-    delete thenable.resolve;
-    delete thenable.reject;
-  }
-  thenable.resolve = (value) => {
-    finalize({
-      status: "fulfilled",
-      value
-    });
-    resolve(value);
-  };
-  thenable.reject = (reason) => {
-    finalize({
-      status: "rejected",
-      reason
-    });
-    reject(reason);
-  };
-  return thenable;
-}
-// Annotate the CommonJS export names for ESM import in node:
-0 && (0);
-//# sourceMappingURL=thenable.cjs.map
 
 /***/ }),
 
@@ -8364,6 +8294,7 @@ __export(utils_exports, {
 module.exports = __toCommonJS(utils_exports);
 var isServer = typeof window === "undefined" || "Deno" in globalThis;
 function noop() {
+  return void 0;
 }
 function functionalUpdate(updater, input) {
   return typeof updater === "function" ? updater(input) : updater;
@@ -8530,24 +8461,15 @@ function isPlainObject(o) {
 function hasObjectPrototype(o) {
   return Object.prototype.toString.call(o) === "[object Object]";
 }
-function sleep(timeout) {
+function sleep(ms) {
   return new Promise((resolve) => {
-    setTimeout(resolve, timeout);
+    setTimeout(resolve, ms);
   });
 }
 function replaceData(prevData, data, options) {
   if (typeof options.structuralSharing === "function") {
     return options.structuralSharing(prevData, data);
   } else if (options.structuralSharing !== false) {
-    if (true) {
-      try {
-        return replaceEqualDeep(prevData, data);
-      } catch (error) {
-        console.error(
-          `Structural sharing requires data to be JSON serializable. To fix this, turn off structuralSharing or return JSON-serializable data from your queryFn. [${options.queryHash}]: ${error}`
-        );
-      }
-    }
     return replaceEqualDeep(prevData, data);
   }
   return data;
@@ -8564,7 +8486,7 @@ function addToStart(items, item, max = 0) {
   return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
 }
 var skipToken = Symbol();
-function ensureQueryFn(options, fetchOptions) {
+var ensureQueryFn = (options, fetchOptions) => {
   if (true) {
     if (options.queryFn === skipToken) {
       console.error(
@@ -8579,7 +8501,7 @@ function ensureQueryFn(options, fetchOptions) {
     return () => Promise.reject(new Error(`Missing queryFn: '${options.queryHash}'`));
   }
   return options.queryFn;
-}
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=utils.cjs.map
@@ -8889,7 +8811,7 @@ module.exports = __toCommonJS(errorBoundaryUtils_exports);
 var React = __toESM(__webpack_require__(/*! react */ "react"), 1);
 var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/react-query/build/modern/utils.cjs");
 var ensurePreventErrorBoundaryRetry = (options, errorResetBoundary) => {
-  if (options.suspense || options.throwOnError || options.experimental_prefetchInRender) {
+  if (options.suspense || options.throwOnError) {
     if (!errorResetBoundary.isReset()) {
       options.retryOnMount = false;
     }
@@ -8957,8 +8879,8 @@ __export(src_exports, {
   useIsRestoring: () => import_isRestoring.useIsRestoring,
   useMutation: () => import_useMutation.useMutation,
   useMutationState: () => import_useMutationState.useMutationState,
-  usePrefetchInfiniteQuery: () => import_usePrefetchInfiniteQuery.usePrefetchInfiniteQuery,
-  usePrefetchQuery: () => import_usePrefetchQuery.usePrefetchQuery,
+  usePrefetchInfiniteQuery: () => import_prefetch.usePrefetchInfiniteQuery,
+  usePrefetchQuery: () => import_prefetch.usePrefetchQuery,
   useQueries: () => import_useQueries.useQueries,
   useQuery: () => import_useQuery.useQuery,
   useQueryClient: () => import_QueryClientProvider.useQueryClient,
@@ -8975,8 +8897,7 @@ var import_useQuery = __webpack_require__(/*! ./useQuery.cjs */ "../node_modules
 var import_useSuspenseQuery = __webpack_require__(/*! ./useSuspenseQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.cjs");
 var import_useSuspenseInfiniteQuery = __webpack_require__(/*! ./useSuspenseInfiniteQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.cjs");
 var import_useSuspenseQueries = __webpack_require__(/*! ./useSuspenseQueries.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.cjs");
-var import_usePrefetchQuery = __webpack_require__(/*! ./usePrefetchQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.cjs");
-var import_usePrefetchInfiniteQuery = __webpack_require__(/*! ./usePrefetchInfiniteQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.cjs");
+var import_prefetch = __webpack_require__(/*! ./prefetch.cjs */ "../node_modules/@tanstack/react-query/build/modern/prefetch.cjs");
 var import_queryOptions = __webpack_require__(/*! ./queryOptions.cjs */ "../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs");
 var import_infiniteQueryOptions = __webpack_require__(/*! ./infiniteQueryOptions.cjs */ "../node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.cjs");
 var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
@@ -9088,6 +9009,58 @@ var IsRestoringProvider = IsRestoringContext.Provider;
 
 /***/ }),
 
+/***/ "../node_modules/@tanstack/react-query/build/modern/prefetch.cjs":
+/*!***********************************************************************!*\
+  !*** ../node_modules/@tanstack/react-query/build/modern/prefetch.cjs ***!
+  \***********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/prefetch.ts
+var prefetch_exports = {};
+__export(prefetch_exports, {
+  usePrefetchInfiniteQuery: () => usePrefetchInfiniteQuery,
+  usePrefetchQuery: () => usePrefetchQuery
+});
+module.exports = __toCommonJS(prefetch_exports);
+var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
+function usePrefetchQuery(options) {
+  const queryClient = (0, import_QueryClientProvider.useQueryClient)();
+  if (!queryClient.getQueryState(options.queryKey)) {
+    queryClient.prefetchQuery(options);
+  }
+}
+function usePrefetchInfiniteQuery(options) {
+  const queryClient = (0, import_QueryClientProvider.useQueryClient)();
+  if (!queryClient.getQueryState(options.queryKey)) {
+    queryClient.prefetchInfiniteQuery(options);
+  }
+}
+// Annotate the CommonJS export names for ESM import in node:
+0 && (0);
+//# sourceMappingURL=prefetch.cjs.map
+
+/***/ }),
+
 /***/ "../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs":
 /*!***************************************************************************!*\
   !*** ../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs ***!
@@ -9159,20 +9132,17 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var suspense_exports = {};
 __export(suspense_exports, {
   defaultThrowOnError: () => defaultThrowOnError,
-  ensureSuspenseTimers: () => ensureSuspenseTimers,
+  ensureStaleTime: () => ensureStaleTime,
   fetchOptimistic: () => fetchOptimistic,
   shouldSuspend: () => shouldSuspend,
   willFetch: () => willFetch
 });
 module.exports = __toCommonJS(suspense_exports);
 var defaultThrowOnError = (_error, query) => query.state.data === void 0;
-var ensureSuspenseTimers = (defaultedOptions) => {
+var ensureStaleTime = (defaultedOptions) => {
   if (defaultedOptions.suspense) {
-    if (defaultedOptions.staleTime === void 0) {
+    if (typeof defaultedOptions.staleTime !== "number") {
       defaultedOptions.staleTime = 1e3;
-    }
-    if (typeof defaultedOptions.gcTime === "number") {
-      defaultedOptions.gcTime = Math.max(defaultedOptions.gcTime, 1e3);
     }
   }
 };
@@ -9261,12 +9231,11 @@ __export(useBaseQuery_exports, {
 module.exports = __toCommonJS(useBaseQuery_exports);
 var React = __toESM(__webpack_require__(/*! react */ "react"), 1);
 var import_query_core = __webpack_require__(/*! @tanstack/query-core */ "../node_modules/@tanstack/query-core/build/modern/index.cjs");
-var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
 var import_QueryErrorResetBoundary = __webpack_require__(/*! ./QueryErrorResetBoundary.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.cjs");
-var import_errorBoundaryUtils = __webpack_require__(/*! ./errorBoundaryUtils.cjs */ "../node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.cjs");
+var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
 var import_isRestoring = __webpack_require__(/*! ./isRestoring.cjs */ "../node_modules/@tanstack/react-query/build/modern/isRestoring.cjs");
+var import_errorBoundaryUtils = __webpack_require__(/*! ./errorBoundaryUtils.cjs */ "../node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.cjs");
 var import_suspense = __webpack_require__(/*! ./suspense.cjs */ "../node_modules/@tanstack/react-query/build/modern/suspense.cjs");
-var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/react-query/build/modern/utils.cjs");
 function useBaseQuery(options, Observer, queryClient) {
   if (true) {
     if (typeof options !== "object" || Array.isArray(options)) {
@@ -9283,10 +9252,9 @@ function useBaseQuery(options, Observer, queryClient) {
     defaultedOptions
   );
   defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
-  (0, import_suspense.ensureSuspenseTimers)(defaultedOptions);
+  (0, import_suspense.ensureStaleTime)(defaultedOptions);
   (0, import_errorBoundaryUtils.ensurePreventErrorBoundaryRetry)(defaultedOptions, errorResetBoundary);
   (0, import_errorBoundaryUtils.useClearResetErrorBoundary)(errorResetBoundary);
-  const isNewCacheEntry = !client.getQueryCache().get(defaultedOptions.queryHash);
   const [observer] = React.useState(
     () => new Observer(
       client,
@@ -9297,7 +9265,7 @@ function useBaseQuery(options, Observer, queryClient) {
   React.useSyncExternalStore(
     React.useCallback(
       (onStoreChange) => {
-        const unsubscribe = isRestoring ? import_utils.noop : observer.subscribe(import_query_core.notifyManager.batchCalls(onStoreChange));
+        const unsubscribe = isRestoring ? () => void 0 : observer.subscribe(import_query_core.notifyManager.batchCalls(onStoreChange));
         observer.updateResult();
         return unsubscribe;
       },
@@ -9325,18 +9293,6 @@ function useBaseQuery(options, Observer, queryClient) {
     defaultedOptions,
     result
   );
-  if (defaultedOptions.experimental_prefetchInRender && !import_query_core.isServer && (0, import_suspense.willFetch)(result, isRestoring)) {
-    const promise = isNewCacheEntry ? (
-      // Fetch immediately on render in order to ensure `.promise` is resolved even if the component is unmounted
-      (0, import_suspense.fetchOptimistic)(defaultedOptions, observer, errorResetBoundary)
-    ) : (
-      // subscribe to the "cache promise" so that we can finalize the currentThenable once data comes in
-      client.getQueryCache().get(defaultedOptions.queryHash)?.promise
-    );
-    promise?.catch(import_utils.noop).finally(() => {
-      observer.updateResult();
-    });
-  }
   return !defaultedOptions.notifyOnChangeProps ? observer.trackResult(result) : result;
 }
 // Annotate the CommonJS export names for ESM import in node:
@@ -9633,96 +9589,6 @@ function useMutationState(options = {}, queryClient) {
 
 /***/ }),
 
-/***/ "../node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.cjs":
-/*!***************************************************************************************!*\
-  !*** ../node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.cjs ***!
-  \***************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// src/usePrefetchInfiniteQuery.tsx
-var usePrefetchInfiniteQuery_exports = {};
-__export(usePrefetchInfiniteQuery_exports, {
-  usePrefetchInfiniteQuery: () => usePrefetchInfiniteQuery
-});
-module.exports = __toCommonJS(usePrefetchInfiniteQuery_exports);
-var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
-function usePrefetchInfiniteQuery(options, queryClient) {
-  const client = (0, import_QueryClientProvider.useQueryClient)(queryClient);
-  if (!client.getQueryState(options.queryKey)) {
-    client.prefetchInfiniteQuery(options);
-  }
-}
-// Annotate the CommonJS export names for ESM import in node:
-0 && (0);
-//# sourceMappingURL=usePrefetchInfiniteQuery.cjs.map
-
-/***/ }),
-
-/***/ "../node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.cjs":
-/*!*******************************************************************************!*\
-  !*** ../node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.cjs ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// src/usePrefetchQuery.tsx
-var usePrefetchQuery_exports = {};
-__export(usePrefetchQuery_exports, {
-  usePrefetchQuery: () => usePrefetchQuery
-});
-module.exports = __toCommonJS(usePrefetchQuery_exports);
-var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
-function usePrefetchQuery(options, queryClient) {
-  const client = (0, import_QueryClientProvider.useQueryClient)(queryClient);
-  if (!client.getQueryState(options.queryKey)) {
-    client.prefetchQuery(options);
-  }
-}
-// Annotate the CommonJS export names for ESM import in node:
-0 && (0);
-//# sourceMappingURL=usePrefetchQuery.cjs.map
-
-/***/ }),
-
 /***/ "../node_modules/@tanstack/react-query/build/modern/useQueries.cjs":
 /*!*************************************************************************!*\
   !*** ../node_modules/@tanstack/react-query/build/modern/useQueries.cjs ***!
@@ -9773,7 +9639,6 @@ var import_isRestoring = __webpack_require__(/*! ./isRestoring.cjs */ "../node_m
 var import_QueryErrorResetBoundary = __webpack_require__(/*! ./QueryErrorResetBoundary.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.cjs");
 var import_errorBoundaryUtils = __webpack_require__(/*! ./errorBoundaryUtils.cjs */ "../node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.cjs");
 var import_suspense = __webpack_require__(/*! ./suspense.cjs */ "../node_modules/@tanstack/react-query/build/modern/suspense.cjs");
-var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/react-query/build/modern/utils.cjs");
 function useQueries({
   queries,
   ...options
@@ -9792,7 +9657,7 @@ function useQueries({
     [queries, client, isRestoring]
   );
   defaultedQueries.forEach((query) => {
-    (0, import_suspense.ensureSuspenseTimers)(query);
+    (0, import_suspense.ensureStaleTime)(query);
     (0, import_errorBoundaryUtils.ensurePreventErrorBoundaryRetry)(query, errorResetBoundary);
   });
   (0, import_errorBoundaryUtils.useClearResetErrorBoundary)(errorResetBoundary);
@@ -9809,7 +9674,7 @@ function useQueries({
   );
   React.useSyncExternalStore(
     React.useCallback(
-      (onStoreChange) => isRestoring ? import_utils.noop : observer.subscribe(import_query_core.notifyManager.batchCalls(onStoreChange)),
+      (onStoreChange) => isRestoring ? () => void 0 : observer.subscribe(import_query_core.notifyManager.batchCalls(onStoreChange)),
       [observer, isRestoring]
     ),
     () => observer.getCurrentResult(),
@@ -9945,11 +9810,6 @@ var import_query_core = __webpack_require__(/*! @tanstack/query-core */ "../node
 var import_useBaseQuery = __webpack_require__(/*! ./useBaseQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useBaseQuery.cjs");
 var import_suspense = __webpack_require__(/*! ./suspense.cjs */ "../node_modules/@tanstack/react-query/build/modern/suspense.cjs");
 function useSuspenseInfiniteQuery(options, queryClient) {
-  if (true) {
-    if (options.queryFn === import_query_core.skipToken) {
-      console.error("skipToken is not allowed for useSuspenseInfiniteQuery");
-    }
-  }
   return (0, import_useBaseQuery.useBaseQuery)(
     {
       ...options,
@@ -10000,27 +9860,19 @@ __export(useSuspenseQueries_exports, {
   useSuspenseQueries: () => useSuspenseQueries
 });
 module.exports = __toCommonJS(useSuspenseQueries_exports);
-var import_query_core = __webpack_require__(/*! @tanstack/query-core */ "../node_modules/@tanstack/query-core/build/modern/index.cjs");
 var import_useQueries = __webpack_require__(/*! ./useQueries.cjs */ "../node_modules/@tanstack/react-query/build/modern/useQueries.cjs");
 var import_suspense = __webpack_require__(/*! ./suspense.cjs */ "../node_modules/@tanstack/react-query/build/modern/suspense.cjs");
 function useSuspenseQueries(options, queryClient) {
   return (0, import_useQueries.useQueries)(
     {
       ...options,
-      queries: options.queries.map((query) => {
-        if (true) {
-          if (query.queryFn === import_query_core.skipToken) {
-            console.error("skipToken is not allowed for useSuspenseQueries");
-          }
-        }
-        return {
-          ...query,
-          suspense: true,
-          throwOnError: import_suspense.defaultThrowOnError,
-          enabled: true,
-          placeholderData: void 0
-        };
-      })
+      queries: options.queries.map((query) => ({
+        ...query,
+        suspense: true,
+        throwOnError: import_suspense.defaultThrowOnError,
+        enabled: true,
+        placeholderData: void 0
+      }))
     },
     queryClient
   );
@@ -10166,7 +10018,7 @@ function noop() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
 /*!************************************************!*\
@@ -10192,8 +10044,8 @@ function checklistStartup() {
   return _checklistStartup.apply(this, arguments);
 }
 function _checklistStartup() {
-  _checklistStartup = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
-    var shouldHide, userProgress;
+  _checklistStartup = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+    var shouldHide, userProgress, editorVisitCount;
     return _regenerator.default.wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
@@ -10203,20 +10055,20 @@ function _checklistStartup() {
             break;
           }
           $e.commands.run('checklist/toggle-icon', false);
-          _context.next = 9;
+          _context.next = 10;
           break;
         case 5:
           _context.next = 7;
           return (0, _functions.fetchUserProgress)();
         case 7:
           userProgress = _context.sent;
-          if (userProgress !== null && userProgress !== void 0 && userProgress[_consts.USER_PROGRESS.SHOULD_OPEN_IN_EDITOR]) {
+          editorVisitCount = (userProgress === null || userProgress === void 0 ? void 0 : userProgress[_consts.USER_PROGRESS.EDITOR_VISIT_COUNT]) || null;
+          if (2 === editorVisitCount) {
             (0, _functions.toggleChecklistPopup)();
-            (0, _functions.dispatchChecklistOpenEvent)();
           }
-        case 9:
-          elementor.off('document:loaded', checklistStartup);
         case 10:
+          elementor.off('document:loaded', checklistStartup);
+        case 11:
         case "end":
           return _context.stop();
       }
